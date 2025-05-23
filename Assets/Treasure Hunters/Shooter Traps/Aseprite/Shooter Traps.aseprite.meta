@@ -1,0 +1,3996 @@
+fileFormatVersion: 2
+guid: 04d76771d3367ea4ca9e3d6779939989
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Shooter Traps_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 96
+      height: 96
+    spriteID: 936de0f2443455841a4c09a560983c9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Shooter Traps_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 108
+      width: 96
+      height: 96
+    spriteID: f7f5ce0f57c17394aba2a27d4a85cd95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 108}
+  - name: Shooter Traps_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 212
+      width: 96
+      height: 96
+    spriteID: 4c680ecd5a863674fb662be403634ab2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 212}
+  - name: Shooter Traps_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 316
+      width: 96
+      height: 96
+    spriteID: cf5a24853e4d4ab40b2628bd0f69e467
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 316}
+  - name: Shooter Traps_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 420
+      width: 96
+      height: 96
+    spriteID: c2b3f901c2c0e934b8777258989f380e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 420}
+  - name: Shooter Traps_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 524
+      width: 96
+      height: 96
+    spriteID: 96e70f6064856be488c9f45cabccc01e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 524}
+  - name: Shooter Traps_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 628
+      width: 96
+      height: 96
+    spriteID: 1619ec4d2e1639c45965a1a658b182f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 628}
+  - name: Shooter Traps_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 732
+      width: 96
+      height: 96
+    spriteID: cbceba1b3c306984e8ecff3521385a8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 732}
+  - name: Shooter Traps_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 836
+      width: 96
+      height: 96
+    spriteID: 5525fd70ee749d44ba27166f28a67ad5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 836}
+  - name: Shooter Traps_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 940
+      width: 96
+      height: 96
+    spriteID: 08c1f87b489e091498de9a984256bf74
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 940}
+  - name: Shooter Traps_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1044
+      width: 96
+      height: 96
+    spriteID: 33ffb630adf242d4ab4065382f227a0c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1044}
+  - name: Shooter Traps_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1148
+      width: 96
+      height: 96
+    spriteID: 3ac0ce54d68b822419f5cd749f74982f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1148}
+  - name: Shooter Traps_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1252
+      width: 96
+      height: 96
+    spriteID: 96a20ceb3e094de45933eec076fe4e6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1252}
+  - name: Shooter Traps_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1356
+      width: 96
+      height: 96
+    spriteID: 8541f8ccca77b93428a5c1c6ab4a9f45
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1356}
+  - name: Shooter Traps_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1460
+      width: 96
+      height: 96
+    spriteID: 3cdf1a636fd15324aacf92f9f5ef7137
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1460}
+  - name: Shooter Traps_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1564
+      width: 96
+      height: 96
+    spriteID: 3181a8557084804459b8d72cf6a2574a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1564}
+  - name: Shooter Traps_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1668
+      width: 96
+      height: 96
+    spriteID: 13135027bde0c064e9c95bb8371c092b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1668}
+  - name: Shooter Traps_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1772
+      width: 96
+      height: 96
+    spriteID: 7b0fe7d4e4c63f64d97982d9afbd44c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1772}
+  - name: Shooter Traps_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1876
+      width: 96
+      height: 96
+    spriteID: ceca6c94cb1aa7643bf4e38cd10c6b04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1876}
+  - name: Shooter Traps_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 4
+      width: 96
+      height: 96
+    spriteID: 580b8efe02da7234bb3835fbf0e167b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 4}
+  - name: Shooter Traps_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 108
+      width: 96
+      height: 96
+    spriteID: 09af3e7e1c2d357459cb42b6c9dd8dc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 108}
+  - name: Shooter Traps_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 212
+      width: 96
+      height: 96
+    spriteID: ca3427080bb097440acbd789da545a6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 212}
+  - name: Shooter Traps_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 316
+      width: 96
+      height: 96
+    spriteID: fad1a5125b95a194d9bc81b474b48e68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 316}
+  - name: Shooter Traps_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 420
+      width: 96
+      height: 96
+    spriteID: 40ad9e4b320aeec4eb4e07d455a3322d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 420}
+  - name: Shooter Traps_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 524
+      width: 96
+      height: 96
+    spriteID: 544887326bf519f47bd9b08f745f05ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 524}
+  - name: Shooter Traps_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 628
+      width: 96
+      height: 96
+    spriteID: d19f2281d0b0e0b42b89eb07781a488c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 628}
+  - name: Shooter Traps_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 732
+      width: 96
+      height: 96
+    spriteID: 90a82b036a10e454587ed0e8d36265bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 732}
+  - name: Shooter Traps_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 836
+      width: 96
+      height: 96
+    spriteID: c9b80665800a61045ae72f65defc7afe
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 836}
+  - name: Shooter Traps_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 940
+      width: 96
+      height: 96
+    spriteID: ddc9ec8b514ee7e43851603016700755
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 940}
+  - name: Shooter Traps_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1044
+      width: 96
+      height: 96
+    spriteID: 24b5eac18c8cae84e89cf4d41d1bdba7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1044}
+  - name: Shooter Traps_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1148
+      width: 96
+      height: 96
+    spriteID: 44775a333574ebe499d959e5bb90c4d7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1148}
+  - name: Shooter Traps_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1252
+      width: 96
+      height: 96
+    spriteID: 420ee68ae7430d4438d074a68a43d358
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1252}
+  - name: Shooter Traps_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1356
+      width: 96
+      height: 96
+    spriteID: 5d7201bc88cc2a642ab981ceef6c8310
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1356}
+  - name: Shooter Traps_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1460
+      width: 96
+      height: 96
+    spriteID: aaf3007b209929045b8582c5f648e9fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1460}
+  - name: Shooter Traps_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1564
+      width: 96
+      height: 96
+    spriteID: 6855b375276302a4c9cde7f54f2b09aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1564}
+  - name: Shooter Traps_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1668
+      width: 96
+      height: 96
+    spriteID: 3f2667beba7b5e141837321ad7437023
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1668}
+  - name: Shooter Traps_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1772
+      width: 96
+      height: 96
+    spriteID: 7cd80133c4689584aa6d519bf3e4c8a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1772}
+  - name: Shooter Traps_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 108
+      y: 1876
+      width: 96
+      height: 96
+    spriteID: 6d3adc843999dc24ea38f1cdd6a5610a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 108, y: 1876}
+  - name: Shooter Traps_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 4
+      width: 96
+      height: 96
+    spriteID: 18edd515b2fd0c94e976f0eb739624a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 4}
+  - name: Shooter Traps_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 108
+      width: 96
+      height: 96
+    spriteID: 5813a2caab23c4c419107639db12761c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 108}
+  - name: Shooter Traps_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 212
+      width: 96
+      height: 96
+    spriteID: 469a26c0e5c7b0341a70f5e089c48172
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 212}
+  - name: Shooter Traps_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 316
+      width: 96
+      height: 96
+    spriteID: cbfdd75c9f39a0947abb4211fb5da909
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 316}
+  - name: Shooter Traps_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 420
+      width: 96
+      height: 96
+    spriteID: 83a4bbbe9edaff94dba16e7a460bc789
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 420}
+  - name: Shooter Traps_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 524
+      width: 96
+      height: 96
+    spriteID: 9a350641ccc4c2a49a92dfc8486a43cc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 524}
+  - name: Shooter Traps_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 628
+      width: 96
+      height: 96
+    spriteID: 267f4b3f856cec54fb37e35da20099e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 628}
+  - name: Shooter Traps_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 732
+      width: 96
+      height: 96
+    spriteID: 7bf924e6ef6cc514b9dbd23399cdb4d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 732}
+  - name: Shooter Traps_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 836
+      width: 96
+      height: 96
+    spriteID: 558d2c96421c7324f83b2fdbf5ee4057
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 836}
+  - name: Shooter Traps_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 940
+      width: 96
+      height: 96
+    spriteID: b3f6bb5606e336d42af11f57a942b480
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 940}
+  - name: Shooter Traps_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1044
+      width: 96
+      height: 96
+    spriteID: f2cffad9b8e8fc94da51f1636b063c6a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1044}
+  - name: Shooter Traps_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1148
+      width: 96
+      height: 96
+    spriteID: 28f3cb98a6773434ea83341b73d0da6f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1148}
+  - name: Shooter Traps_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1252
+      width: 96
+      height: 96
+    spriteID: ff0855f8da646d448b767552c654145c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1252}
+  - name: Shooter Traps_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1356
+      width: 96
+      height: 96
+    spriteID: dde94f5c314eefd4ba22ac5bff74350d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1356}
+  - name: Shooter Traps_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1460
+      width: 96
+      height: 96
+    spriteID: 8d319217746475544b81ba624ed092a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1460}
+  - name: Shooter Traps_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1564
+      width: 96
+      height: 96
+    spriteID: 29752927dbf61af499f122afa6d85f99
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1564}
+  - name: Shooter Traps_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1668
+      width: 96
+      height: 96
+    spriteID: fbaf72b49b15f404180abca3eb87cc3c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1668}
+  - name: Shooter Traps_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1772
+      width: 96
+      height: 96
+    spriteID: 1fd8a91c69b1c99469a5ca8c1d63d41f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1772}
+  - name: Shooter Traps_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 1876
+      width: 96
+      height: 96
+    spriteID: 3bf36c1556f85bd46a38166cf29e3f57
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 1876}
+  - name: Shooter Traps_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 4
+      width: 96
+      height: 96
+    spriteID: 384243dea4178e34b838ac1c8135f32e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 4}
+  - name: Shooter Traps_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 108
+      width: 96
+      height: 96
+    spriteID: 2173bc40a8a81cc47a7336589e5ecbb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 108}
+  - name: Shooter Traps_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 212
+      width: 96
+      height: 96
+    spriteID: 2318313f5fe13e84080d185734f05e7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 212}
+  - name: Shooter Traps_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 316
+      width: 96
+      height: 96
+    spriteID: f4c0b00bc5f20304b8994d4973c034e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 316}
+  - name: Shooter Traps_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 420
+      width: 96
+      height: 96
+    spriteID: 05754715a6941564093b46ffb4c77743
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 420}
+  - name: Shooter Traps_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 524
+      width: 96
+      height: 96
+    spriteID: 04aa1a80714f1224f9caad9e9eab8341
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 524}
+  - name: Shooter Traps_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 628
+      width: 96
+      height: 96
+    spriteID: 37665b01e2c5cac42b3994bce14df8b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 628}
+  - name: Shooter Traps_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 732
+      width: 96
+      height: 96
+    spriteID: 4a9399c0780d1bf4fbfddcfd3ef90531
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 732}
+  - name: Shooter Traps_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 836
+      width: 96
+      height: 96
+    spriteID: bc5b7924922b32049aef72d27436c23e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 836}
+  - name: Shooter Traps_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 940
+      width: 96
+      height: 96
+    spriteID: cadb85adaf3c41344a9685bb8002f7fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 940}
+  - name: Shooter Traps_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1044
+      width: 96
+      height: 96
+    spriteID: 492716d0bda10704f9a10879a36b7ca2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1044}
+  - name: Shooter Traps_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1148
+      width: 96
+      height: 96
+    spriteID: d0179ce6e07ae8f4dbe06a11e782cc63
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1148}
+  - name: Shooter Traps_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1252
+      width: 96
+      height: 96
+    spriteID: 1e1fe8f5370a171458c1e0f159f8143f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1252}
+  - name: Shooter Traps_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1356
+      width: 96
+      height: 96
+    spriteID: 4e50d625185e5f64886f6aed2e4516d2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1356}
+  - name: Shooter Traps_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1460
+      width: 96
+      height: 96
+    spriteID: 82b9a74ca1ecc4044a4ee3ca02a08898
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1460}
+  - name: Shooter Traps_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1564
+      width: 96
+      height: 96
+    spriteID: d0625c4c0ee7e41439bace148a871995
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1564}
+  - name: Shooter Traps_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1668
+      width: 96
+      height: 96
+    spriteID: 1b45bab4b82b5de47a3e8708980b22db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1668}
+  - name: Shooter Traps_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1772
+      width: 96
+      height: 96
+    spriteID: 043de0f68b6773d4aa6ac3f2b4b024bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1772}
+  - name: Shooter Traps_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 316
+      y: 1876
+      width: 96
+      height: 96
+    spriteID: e4d7a6b33980e46489b03107647c74aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 316, y: 1876}
+  - name: Shooter Traps_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 4
+      width: 96
+      height: 96
+    spriteID: 152540e61b986d84abb19d8a4ab7fb19
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 4}
+  - name: Shooter Traps_Frame_77
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 108
+      width: 96
+      height: 96
+    spriteID: 4ff88ef7069f9a34fb41b96ef032b5f0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 108}
+  - name: Shooter Traps_Frame_78
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 212
+      width: 96
+      height: 96
+    spriteID: 4d3f5f6c333031246860617700faa8a5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 212}
+  - name: Shooter Traps_Frame_79
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 316
+      width: 96
+      height: 96
+    spriteID: dac7c8a7560e4c04c9cbb693f702c00a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 316}
+  - name: Shooter Traps_Frame_80
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 420
+      width: 96
+      height: 96
+    spriteID: 5dde785c6ddc67d42b4f189053157a0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 420}
+  - name: Shooter Traps_Frame_81
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 524
+      width: 96
+      height: 96
+    spriteID: 990cf72b87214d947b3f851d71af0bc8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 524}
+  - name: Shooter Traps_Frame_82
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 628
+      width: 96
+      height: 96
+    spriteID: d5bce195188a6c148880059f6822d684
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 628}
+  - name: Shooter Traps_Frame_83
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 732
+      width: 96
+      height: 96
+    spriteID: 1e267a0f1efc43f4b971b81845f04c01
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 732}
+  - name: Shooter Traps_Frame_84
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 836
+      width: 96
+      height: 96
+    spriteID: d25c47d226b0002488663d147b3e24be
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 836}
+  - name: Shooter Traps_Frame_85
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 940
+      width: 96
+      height: 96
+    spriteID: bcc1182d11e46ca46ad1711051e974b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 940}
+  - name: Shooter Traps_Frame_86
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1044
+      width: 96
+      height: 96
+    spriteID: a3b9f65230e8ee0498f88cf504b4a327
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1044}
+  - name: Shooter Traps_Frame_87
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1148
+      width: 96
+      height: 96
+    spriteID: bc9ce4a2950570b45873a06025a8ce4e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1148}
+  - name: Shooter Traps_Frame_88
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1252
+      width: 96
+      height: 96
+    spriteID: 7a196eba4a60696458d6bb4d2361b6e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1252}
+  - name: Shooter Traps_Frame_89
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1356
+      width: 96
+      height: 96
+    spriteID: d0022c498fe36e446ba9ece72311b9e6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1356}
+  - name: Shooter Traps_Frame_90
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1460
+      width: 96
+      height: 96
+    spriteID: 45b69fd900750f74586ffa6eb1f03b13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1460}
+  - name: Shooter Traps_Frame_91
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1564
+      width: 96
+      height: 96
+    spriteID: 61652483ce7328b4594d3791e079b9c9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1564}
+  - name: Shooter Traps_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1668
+      width: 96
+      height: 96
+    spriteID: bc1a7df7b03e7484d8ba1fa6891906fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1668}
+  - name: Shooter Traps_Frame_93
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1772
+      width: 96
+      height: 96
+    spriteID: 00e044b994cd7e54a80b22a29a1b093a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1772}
+  - name: Shooter Traps_Frame_94
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 420
+      y: 1876
+      width: 96
+      height: 96
+    spriteID: 40c90e34f08dec049a6b5b9f080e239b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 420, y: 1876}
+  - name: Shooter Traps_Frame_95
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 4
+      width: 96
+      height: 96
+    spriteID: 45110eca9f1369d41b638ba99e02ca6b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 4}
+  - name: Shooter Traps_Frame_96
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 108
+      width: 96
+      height: 96
+    spriteID: 0bf11c98d509e9e4b8d53283ebba720f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 108}
+  - name: Shooter Traps_Frame_97
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 212
+      width: 96
+      height: 96
+    spriteID: 0bd96832dd424a44ca49aeb6edf9cd54
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 212}
+  - name: Shooter Traps_Frame_98
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 316
+      width: 96
+      height: 96
+    spriteID: 0d2b372706a018b4895780fe4dc2a76b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 316}
+  - name: Shooter Traps_Frame_99
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 420
+      width: 96
+      height: 96
+    spriteID: 0a8a1ce6006c69b419c18f51716df0c6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 420}
+  - name: Shooter Traps_Frame_100
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 524
+      width: 96
+      height: 96
+    spriteID: 67986667db4235040ad2744b5e31eb4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 524}
+  - name: Shooter Traps_Frame_101
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 628
+      width: 96
+      height: 96
+    spriteID: 1283aacff2fbd2541bc1637244d0e721
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 628}
+  - name: Shooter Traps_Frame_102
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 732
+      width: 96
+      height: 96
+    spriteID: 4299e82cb454def44879c1920eb2b4c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 732}
+  - name: Shooter Traps_Frame_103
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 836
+      width: 96
+      height: 96
+    spriteID: fa218bbd02a68de49818fe5006398bf9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 836}
+  - name: Shooter Traps_Frame_104
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 940
+      width: 96
+      height: 96
+    spriteID: 7359e279f1feb544e82e73ad34ae40ae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 940}
+  - name: Shooter Traps_Frame_105
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1044
+      width: 96
+      height: 96
+    spriteID: c7f5a2408d40a0f4a87769e913b61895
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1044}
+  - name: Shooter Traps_Frame_106
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1148
+      width: 96
+      height: 96
+    spriteID: 4e9069b7cc05da44891d65fd7d20a4b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1148}
+  - name: Shooter Traps_Frame_107
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1252
+      width: 96
+      height: 96
+    spriteID: 487aced7e59bcff4a8c9721eeff0026d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1252}
+  - name: Shooter Traps_Frame_108
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1356
+      width: 96
+      height: 96
+    spriteID: 460342e966580414a91a148190f74013
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1356}
+  - name: Shooter Traps_Frame_109
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1460
+      width: 96
+      height: 96
+    spriteID: e3dcccc9cbca8714c8f128051d22a46d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1460}
+  - name: Shooter Traps_Frame_110
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1564
+      width: 96
+      height: 96
+    spriteID: ab1f9c4dd7a93684b9a89f02842b92e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1564}
+  - name: Shooter Traps_Frame_111
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1668
+      width: 96
+      height: 96
+    spriteID: 86c15bd0ea4e73b4b914b5fdc9ecd1a8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1668}
+  - name: Shooter Traps_Frame_112
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1772
+      width: 96
+      height: 96
+    spriteID: ea9e53ae02ce2ce488edc36182a87087
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1772}
+  - name: Shooter Traps_Frame_113
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 524
+      y: 1876
+      width: 96
+      height: 96
+    spriteID: 1ba09a573831f4c4eb4c336d49ecdae6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 524, y: 1876}
+  - name: Shooter Traps_Frame_114
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 4
+      width: 96
+      height: 96
+    spriteID: 173ec2731a3ef614c83cfa22e735b7ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 4}
+  - name: Shooter Traps_Frame_115
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 108
+      width: 96
+      height: 96
+    spriteID: c06ec0f145e82e9468a1aef7ecccd622
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 108}
+  - name: Shooter Traps_Frame_116
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 212
+      width: 96
+      height: 96
+    spriteID: 03f097b99c9056346bed8e718036776a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 212}
+  - name: Shooter Traps_Frame_117
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 316
+      width: 96
+      height: 96
+    spriteID: 67b7f85582ffead4ba41f023cfdcd5b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 316}
+  - name: Shooter Traps_Frame_118
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 420
+      width: 96
+      height: 96
+    spriteID: 2e46ee14332193643afea707cc6dffd4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 420}
+  - name: Shooter Traps_Frame_119
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 524
+      width: 96
+      height: 96
+    spriteID: 7d048e981d83c814a9116f9263408c2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 524}
+  - name: Shooter Traps_Frame_120
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 628
+      width: 96
+      height: 96
+    spriteID: 01a33777cdcb840489ff56c3387644e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 628}
+  - name: Shooter Traps_Frame_121
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 732
+      width: 96
+      height: 96
+    spriteID: b47d48e8e744b1a43a47ce841160e33a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 732}
+  - name: Shooter Traps_Frame_122
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 836
+      width: 96
+      height: 96
+    spriteID: 58aa5e06487a79e40967aba11784dfae
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 836}
+  - name: Shooter Traps_Frame_123
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 940
+      width: 96
+      height: 96
+    spriteID: c0226a31668f2f740ac9b3bc8f1c8409
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 940}
+  - name: Shooter Traps_Frame_124
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1044
+      width: 96
+      height: 96
+    spriteID: e42ade7995b23934bbc03b35308885e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1044}
+  - name: Shooter Traps_Frame_125
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1148
+      width: 96
+      height: 96
+    spriteID: fdffb2ac235d87a4ab97b9f01f25ff68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1148}
+  - name: Shooter Traps_Frame_126
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1252
+      width: 96
+      height: 96
+    spriteID: e02010da71e85574ea6790d5fefadf27
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1252}
+  - name: Shooter Traps_Frame_127
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1356
+      width: 96
+      height: 96
+    spriteID: 7f132f7eb08367149947f522b444930b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1356}
+  - name: Shooter Traps_Frame_128
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1460
+      width: 96
+      height: 96
+    spriteID: a574ae5c6606a07489b8d418e04e6e18
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1460}
+  - name: Shooter Traps_Frame_129
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1564
+      width: 96
+      height: 96
+    spriteID: 21fbc1e61a57b8a4095eac7cc274e217
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1564}
+  - name: Shooter Traps_Frame_130
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1668
+      width: 96
+      height: 96
+    spriteID: 89b97bb1f429afe4d844ba603eb8f0e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1668}
+  - name: Shooter Traps_Frame_131
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1772
+      width: 96
+      height: 96
+    spriteID: 0dbb1c0781b175144ad3bfc2274224f3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1772}
+  - name: Shooter Traps_Frame_132
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 628
+      y: 1876
+      width: 96
+      height: 96
+    spriteID: ef3803b33e3f6b743b97ba7b8c2c80aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 628, y: 1876}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 668069578
+    name: Shooter Traps
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Shooter Traps_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 936de0f2443455841a4c09a560983c9c
+    - name: Shooter Traps_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: f7f5ce0f57c17394aba2a27d4a85cd95
+    - name: Shooter Traps_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 4c680ecd5a863674fb662be403634ab2
+    - name: Shooter Traps_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: cf5a24853e4d4ab40b2628bd0f69e467
+    - name: Shooter Traps_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: c2b3f901c2c0e934b8777258989f380e
+    - name: Shooter Traps_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 96e70f6064856be488c9f45cabccc01e
+    - name: Shooter Traps_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 1619ec4d2e1639c45965a1a658b182f1
+    - name: Shooter Traps_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: cbceba1b3c306984e8ecff3521385a8d
+    - name: Shooter Traps_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 5525fd70ee749d44ba27166f28a67ad5
+    - name: Shooter Traps_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 08c1f87b489e091498de9a984256bf74
+    - name: Shooter Traps_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 33ffb630adf242d4ab4065382f227a0c
+    - name: Shooter Traps_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 3ac0ce54d68b822419f5cd749f74982f
+    - name: Shooter Traps_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 96a20ceb3e094de45933eec076fe4e6b
+    - name: Shooter Traps_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 8541f8ccca77b93428a5c1c6ab4a9f45
+    - name: Shooter Traps_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 3cdf1a636fd15324aacf92f9f5ef7137
+    - name: Shooter Traps_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 3181a8557084804459b8d72cf6a2574a
+    - name: Shooter Traps_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 13135027bde0c064e9c95bb8371c092b
+    - name: Shooter Traps_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 7b0fe7d4e4c63f64d97982d9afbd44c8
+    - name: Shooter Traps_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: ceca6c94cb1aa7643bf4e38cd10c6b04
+    - name: Shooter Traps_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 580b8efe02da7234bb3835fbf0e167b5
+    - name: Shooter Traps_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 09af3e7e1c2d357459cb42b6c9dd8dc5
+    - name: Shooter Traps_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: ca3427080bb097440acbd789da545a6c
+    - name: Shooter Traps_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: fad1a5125b95a194d9bc81b474b48e68
+    - name: Shooter Traps_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 40ad9e4b320aeec4eb4e07d455a3322d
+    - name: Shooter Traps_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 544887326bf519f47bd9b08f745f05ee
+    - name: Shooter Traps_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: d19f2281d0b0e0b42b89eb07781a488c
+    - name: Shooter Traps_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 90a82b036a10e454587ed0e8d36265bc
+    - name: Shooter Traps_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: c9b80665800a61045ae72f65defc7afe
+    - name: Shooter Traps_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: ddc9ec8b514ee7e43851603016700755
+    - name: Shooter Traps_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 24b5eac18c8cae84e89cf4d41d1bdba7
+    - name: Shooter Traps_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 44775a333574ebe499d959e5bb90c4d7
+    - name: Shooter Traps_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 420ee68ae7430d4438d074a68a43d358
+    - name: Shooter Traps_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 5d7201bc88cc2a642ab981ceef6c8310
+    - name: Shooter Traps_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: aaf3007b209929045b8582c5f648e9fa
+    - name: Shooter Traps_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 6855b375276302a4c9cde7f54f2b09aa
+    - name: Shooter Traps_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 3f2667beba7b5e141837321ad7437023
+    - name: Shooter Traps_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 7cd80133c4689584aa6d519bf3e4c8a1
+    - name: Shooter Traps_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 6d3adc843999dc24ea38f1cdd6a5610a
+    - name: Shooter Traps_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 18edd515b2fd0c94e976f0eb739624a8
+    - name: Shooter Traps_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 5813a2caab23c4c419107639db12761c
+    - name: Shooter Traps_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 469a26c0e5c7b0341a70f5e089c48172
+    - name: Shooter Traps_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: cbfdd75c9f39a0947abb4211fb5da909
+    - name: Shooter Traps_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 83a4bbbe9edaff94dba16e7a460bc789
+    - name: Shooter Traps_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 9a350641ccc4c2a49a92dfc8486a43cc
+    - name: Shooter Traps_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 267f4b3f856cec54fb37e35da20099e4
+    - name: Shooter Traps_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 7bf924e6ef6cc514b9dbd23399cdb4d2
+    - name: Shooter Traps_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 558d2c96421c7324f83b2fdbf5ee4057
+    - name: Shooter Traps_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: b3f6bb5606e336d42af11f57a942b480
+    - name: Shooter Traps_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: f2cffad9b8e8fc94da51f1636b063c6a
+    - name: Shooter Traps_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 28f3cb98a6773434ea83341b73d0da6f
+    - name: Shooter Traps_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: ff0855f8da646d448b767552c654145c
+    - name: Shooter Traps_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: dde94f5c314eefd4ba22ac5bff74350d
+    - name: Shooter Traps_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 8d319217746475544b81ba624ed092a2
+    - name: Shooter Traps_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 29752927dbf61af499f122afa6d85f99
+    - name: Shooter Traps_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: fbaf72b49b15f404180abca3eb87cc3c
+    - name: Shooter Traps_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 1fd8a91c69b1c99469a5ca8c1d63d41f
+    - name: Shooter Traps_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 3bf36c1556f85bd46a38166cf29e3f57
+    - name: Shooter Traps_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 384243dea4178e34b838ac1c8135f32e
+    - name: Shooter Traps_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 2173bc40a8a81cc47a7336589e5ecbb7
+    - name: Shooter Traps_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 2318313f5fe13e84080d185734f05e7a
+    - name: Shooter Traps_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: f4c0b00bc5f20304b8994d4973c034e4
+    - name: Shooter Traps_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 05754715a6941564093b46ffb4c77743
+    - name: Shooter Traps_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 04aa1a80714f1224f9caad9e9eab8341
+    - name: Shooter Traps_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 37665b01e2c5cac42b3994bce14df8b6
+    - name: Shooter Traps_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 4a9399c0780d1bf4fbfddcfd3ef90531
+    - name: Shooter Traps_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: bc5b7924922b32049aef72d27436c23e
+    - name: Shooter Traps_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: cadb85adaf3c41344a9685bb8002f7fb
+    - name: Shooter Traps_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 492716d0bda10704f9a10879a36b7ca2
+    - name: Shooter Traps_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: d0179ce6e07ae8f4dbe06a11e782cc63
+    - name: Shooter Traps_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 1e1fe8f5370a171458c1e0f159f8143f
+    - name: Shooter Traps_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 4e50d625185e5f64886f6aed2e4516d2
+    - name: Shooter Traps_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 82b9a74ca1ecc4044a4ee3ca02a08898
+    - name: Shooter Traps_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: d0625c4c0ee7e41439bace148a871995
+    - name: Shooter Traps_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 1b45bab4b82b5de47a3e8708980b22db
+    - name: Shooter Traps_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 043de0f68b6773d4aa6ac3f2b4b024bd
+    - name: Shooter Traps_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: e4d7a6b33980e46489b03107647c74aa
+    - name: Shooter Traps_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 152540e61b986d84abb19d8a4ab7fb19
+    - name: Shooter Traps_Frame_77
+      frameIndex: 77
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 4ff88ef7069f9a34fb41b96ef032b5f0
+    - name: Shooter Traps_Frame_78
+      frameIndex: 78
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 4d3f5f6c333031246860617700faa8a5
+    - name: Shooter Traps_Frame_79
+      frameIndex: 79
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: dac7c8a7560e4c04c9cbb693f702c00a
+    - name: Shooter Traps_Frame_80
+      frameIndex: 80
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 5dde785c6ddc67d42b4f189053157a0b
+    - name: Shooter Traps_Frame_81
+      frameIndex: 81
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 990cf72b87214d947b3f851d71af0bc8
+    - name: Shooter Traps_Frame_82
+      frameIndex: 82
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: d5bce195188a6c148880059f6822d684
+    - name: Shooter Traps_Frame_83
+      frameIndex: 83
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 1e267a0f1efc43f4b971b81845f04c01
+    - name: Shooter Traps_Frame_84
+      frameIndex: 84
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: d25c47d226b0002488663d147b3e24be
+    - name: Shooter Traps_Frame_85
+      frameIndex: 85
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: bcc1182d11e46ca46ad1711051e974b3
+    - name: Shooter Traps_Frame_86
+      frameIndex: 86
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: a3b9f65230e8ee0498f88cf504b4a327
+    - name: Shooter Traps_Frame_87
+      frameIndex: 87
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: bc9ce4a2950570b45873a06025a8ce4e
+    - name: Shooter Traps_Frame_88
+      frameIndex: 88
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 7a196eba4a60696458d6bb4d2361b6e0
+    - name: Shooter Traps_Frame_89
+      frameIndex: 89
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: d0022c498fe36e446ba9ece72311b9e6
+    - name: Shooter Traps_Frame_90
+      frameIndex: 90
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 45b69fd900750f74586ffa6eb1f03b13
+    - name: Shooter Traps_Frame_91
+      frameIndex: 91
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 61652483ce7328b4594d3791e079b9c9
+    - name: Shooter Traps_Frame_92
+      frameIndex: 92
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: bc1a7df7b03e7484d8ba1fa6891906fd
+    - name: Shooter Traps_Frame_93
+      frameIndex: 93
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 00e044b994cd7e54a80b22a29a1b093a
+    - name: Shooter Traps_Frame_94
+      frameIndex: 94
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 40c90e34f08dec049a6b5b9f080e239b
+    - name: Shooter Traps_Frame_95
+      frameIndex: 95
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 45110eca9f1369d41b638ba99e02ca6b
+    - name: Shooter Traps_Frame_96
+      frameIndex: 96
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 0bf11c98d509e9e4b8d53283ebba720f
+    - name: Shooter Traps_Frame_97
+      frameIndex: 97
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 0bd96832dd424a44ca49aeb6edf9cd54
+    - name: Shooter Traps_Frame_98
+      frameIndex: 98
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 0d2b372706a018b4895780fe4dc2a76b
+    - name: Shooter Traps_Frame_99
+      frameIndex: 99
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 0a8a1ce6006c69b419c18f51716df0c6
+    - name: Shooter Traps_Frame_100
+      frameIndex: 100
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 67986667db4235040ad2744b5e31eb4a
+    - name: Shooter Traps_Frame_101
+      frameIndex: 101
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 1283aacff2fbd2541bc1637244d0e721
+    - name: Shooter Traps_Frame_102
+      frameIndex: 102
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 4299e82cb454def44879c1920eb2b4c0
+    - name: Shooter Traps_Frame_103
+      frameIndex: 103
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: fa218bbd02a68de49818fe5006398bf9
+    - name: Shooter Traps_Frame_104
+      frameIndex: 104
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 7359e279f1feb544e82e73ad34ae40ae
+    - name: Shooter Traps_Frame_105
+      frameIndex: 105
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: c7f5a2408d40a0f4a87769e913b61895
+    - name: Shooter Traps_Frame_106
+      frameIndex: 106
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 4e9069b7cc05da44891d65fd7d20a4b4
+    - name: Shooter Traps_Frame_107
+      frameIndex: 107
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 487aced7e59bcff4a8c9721eeff0026d
+    - name: Shooter Traps_Frame_108
+      frameIndex: 108
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 460342e966580414a91a148190f74013
+    - name: Shooter Traps_Frame_109
+      frameIndex: 109
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: e3dcccc9cbca8714c8f128051d22a46d
+    - name: Shooter Traps_Frame_110
+      frameIndex: 110
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: ab1f9c4dd7a93684b9a89f02842b92e0
+    - name: Shooter Traps_Frame_111
+      frameIndex: 111
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 86c15bd0ea4e73b4b914b5fdc9ecd1a8
+    - name: Shooter Traps_Frame_112
+      frameIndex: 112
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: ea9e53ae02ce2ce488edc36182a87087
+    - name: Shooter Traps_Frame_113
+      frameIndex: 113
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 1ba09a573831f4c4eb4c336d49ecdae6
+    - name: Shooter Traps_Frame_114
+      frameIndex: 114
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 173ec2731a3ef614c83cfa22e735b7ad
+    - name: Shooter Traps_Frame_115
+      frameIndex: 115
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: c06ec0f145e82e9468a1aef7ecccd622
+    - name: Shooter Traps_Frame_116
+      frameIndex: 116
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 03f097b99c9056346bed8e718036776a
+    - name: Shooter Traps_Frame_117
+      frameIndex: 117
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 67b7f85582ffead4ba41f023cfdcd5b1
+    - name: Shooter Traps_Frame_118
+      frameIndex: 118
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 2e46ee14332193643afea707cc6dffd4
+    - name: Shooter Traps_Frame_119
+      frameIndex: 119
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 7d048e981d83c814a9116f9263408c2a
+    - name: Shooter Traps_Frame_120
+      frameIndex: 120
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 01a33777cdcb840489ff56c3387644e3
+    - name: Shooter Traps_Frame_121
+      frameIndex: 121
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: b47d48e8e744b1a43a47ce841160e33a
+    - name: Shooter Traps_Frame_122
+      frameIndex: 122
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 58aa5e06487a79e40967aba11784dfae
+    - name: Shooter Traps_Frame_123
+      frameIndex: 123
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: c0226a31668f2f740ac9b3bc8f1c8409
+    - name: Shooter Traps_Frame_124
+      frameIndex: 124
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: e42ade7995b23934bbc03b35308885e4
+    - name: Shooter Traps_Frame_125
+      frameIndex: 125
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: fdffb2ac235d87a4ab97b9f01f25ff68
+    - name: Shooter Traps_Frame_126
+      frameIndex: 126
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: e02010da71e85574ea6790d5fefadf27
+    - name: Shooter Traps_Frame_127
+      frameIndex: 127
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 7f132f7eb08367149947f522b444930b
+    - name: Shooter Traps_Frame_128
+      frameIndex: 128
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: a574ae5c6606a07489b8d418e04e6e18
+    - name: Shooter Traps_Frame_129
+      frameIndex: 129
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 21fbc1e61a57b8a4095eac7cc274e217
+    - name: Shooter Traps_Frame_130
+      frameIndex: 130
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 89b97bb1f429afe4d844ba603eb8f0e0
+    - name: Shooter Traps_Frame_131
+      frameIndex: 131
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: 0dbb1c0781b175144ad3bfc2274224f3
+    - name: Shooter Traps_Frame_132
+      frameIndex: 132
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 96
+        height: 96
+      spriteId: ef3803b33e3f6b743b97ba7b8c2c80aa
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 96, y: 96}

@@ -1,0 +1,3851 @@
+fileFormatVersion: 2
+guid: da80435b28e1c144689c802c774245d3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Pirate Treasure_Frame_0
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 64
+      height: 64
+    spriteID: ad67b1cd0b55b5541a534b579a46440f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Pirate Treasure_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 64
+      height: 64
+    spriteID: eedaec539a7ce8f40a289751ec149eb3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: Pirate Treasure_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 148
+      width: 64
+      height: 64
+    spriteID: e9d3c3ec1f6eccd499c3c7dbabb318c7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 148}
+  - name: Pirate Treasure_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 220
+      width: 64
+      height: 64
+    spriteID: 2c95b4ee27ba8b24bb66dbfb3b841ea0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 220}
+  - name: Pirate Treasure_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 292
+      width: 64
+      height: 64
+    spriteID: 6502a324dbed5124fa2668b0e4f03a7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 292}
+  - name: Pirate Treasure_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 364
+      width: 64
+      height: 64
+    spriteID: 8ad22f8c3ac77b04b9b4009c0131d756
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 364}
+  - name: Pirate Treasure_Frame_6
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 436
+      width: 64
+      height: 64
+    spriteID: cf9b6dd25e5ad98438be0d8ae2ef41d1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 436}
+  - name: Pirate Treasure_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 508
+      width: 64
+      height: 64
+    spriteID: 7a7cce91e302e1b4dadec5e7ce899032
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 508}
+  - name: Pirate Treasure_Frame_8
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 580
+      width: 64
+      height: 64
+    spriteID: f2a7b69c8206aaa448980319a191372f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 580}
+  - name: Pirate Treasure_Frame_9
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 652
+      width: 64
+      height: 64
+    spriteID: 2b8949840f062a842b965ece6b7c665e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 652}
+  - name: Pirate Treasure_Frame_10
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 724
+      width: 64
+      height: 64
+    spriteID: a92f2063134d48245bcd59c9a34603e4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 724}
+  - name: Pirate Treasure_Frame_11
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 796
+      width: 64
+      height: 64
+    spriteID: c31934497299f094cabbdc6e86afb53c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 796}
+  - name: Pirate Treasure_Frame_12
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 868
+      width: 64
+      height: 64
+    spriteID: a62d8b3fa2fb6ca4598144e1da71b055
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 868}
+  - name: Pirate Treasure_Frame_13
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 940
+      width: 64
+      height: 64
+    spriteID: 623426258db2550479f8fbbbb4938a0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 940}
+  - name: Pirate Treasure_Frame_14
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 4
+      width: 64
+      height: 64
+    spriteID: ae67adb603b427c4e93e301c45ab6093
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 4}
+  - name: Pirate Treasure_Frame_15
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 17d4aad9721c7124c8488d48c5a80f94
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 76}
+  - name: Pirate Treasure_Frame_16
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 148
+      width: 64
+      height: 64
+    spriteID: 6756511fea59f8540a11d90818fbcc86
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 148}
+  - name: Pirate Treasure_Frame_17
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 220
+      width: 64
+      height: 64
+    spriteID: c88f19494b2a854449b4a727a0f23374
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 220}
+  - name: Pirate Treasure_Frame_18
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 292
+      width: 64
+      height: 64
+    spriteID: a648ea7c72cc0b94bb6dc1b5668b983a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 292}
+  - name: Pirate Treasure_Frame_19
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 364
+      width: 64
+      height: 64
+    spriteID: 82af2b0bb93c4ee4894bc17444a60492
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 364}
+  - name: Pirate Treasure_Frame_20
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 436
+      width: 64
+      height: 64
+    spriteID: 4dac37320f6158b47928ce4782ce0920
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 436}
+  - name: Pirate Treasure_Frame_21
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 508
+      width: 64
+      height: 64
+    spriteID: abf9a391f00245a46a9ea47e2f3c7994
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 508}
+  - name: Pirate Treasure_Frame_22
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 580
+      width: 64
+      height: 64
+    spriteID: e54fb37b1c6718248ab7e62333a35940
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 580}
+  - name: Pirate Treasure_Frame_23
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 652
+      width: 64
+      height: 64
+    spriteID: 584cfed45aa22c648a0ddac7c4a8c989
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 652}
+  - name: Pirate Treasure_Frame_24
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 724
+      width: 64
+      height: 64
+    spriteID: c52202353d2ef914b850e4d67ba359e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 724}
+  - name: Pirate Treasure_Frame_25
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 796
+      width: 64
+      height: 64
+    spriteID: 1ecf280d92616864097478caccdf5983
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 796}
+  - name: Pirate Treasure_Frame_26
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 868
+      width: 64
+      height: 64
+    spriteID: 916041c85f6baef4fa7242d057a431bc
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 868}
+  - name: Pirate Treasure_Frame_27
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 76
+      y: 940
+      width: 64
+      height: 64
+    spriteID: ec0362a5bde4324469fdf9da1e597703
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 76, y: 940}
+  - name: Pirate Treasure_Frame_28
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 4
+      width: 64
+      height: 64
+    spriteID: e445cb2ca979cdc4893fecefe53d33ac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 4}
+  - name: Pirate Treasure_Frame_29
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 8a1de4de156c0b84d964795077d71fb1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 76}
+  - name: Pirate Treasure_Frame_30
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 148
+      width: 64
+      height: 64
+    spriteID: cbcf96afc2e3bf84584b9ddd233abee9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 148}
+  - name: Pirate Treasure_Frame_31
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 220
+      width: 64
+      height: 64
+    spriteID: 7d2f753bcd4921b43849791d94168da7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 220}
+  - name: Pirate Treasure_Frame_32
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 292
+      width: 64
+      height: 64
+    spriteID: 3588c548c22e45e429eaacd30b66303b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 292}
+  - name: Pirate Treasure_Frame_33
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 364
+      width: 64
+      height: 64
+    spriteID: 0b5fcf53ae5701e4494f8d4863f1eb59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 364}
+  - name: Pirate Treasure_Frame_34
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 436
+      width: 64
+      height: 64
+    spriteID: 6cd2fce6a10277d47861cce2caddcae3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 436}
+  - name: Pirate Treasure_Frame_35
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 508
+      width: 64
+      height: 64
+    spriteID: ab5394b76b315424682a2ca207b4c93f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 508}
+  - name: Pirate Treasure_Frame_36
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 580
+      width: 64
+      height: 64
+    spriteID: 57f690906ace4a345b63064ba48edd44
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 580}
+  - name: Pirate Treasure_Frame_37
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 652
+      width: 64
+      height: 64
+    spriteID: 5a3067cccf5917d4b863066cc2551004
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 652}
+  - name: Pirate Treasure_Frame_38
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 724
+      width: 64
+      height: 64
+    spriteID: ea6168e3c3337d34db5d442a9f1f8298
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 724}
+  - name: Pirate Treasure_Frame_39
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 796
+      width: 64
+      height: 64
+    spriteID: b30178a70eb76e149adb7deddb1fba93
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 796}
+  - name: Pirate Treasure_Frame_40
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 868
+      width: 64
+      height: 64
+    spriteID: 870ecdf97b0b2014d92f6b0c3523c8a0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 868}
+  - name: Pirate Treasure_Frame_41
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 148
+      y: 940
+      width: 64
+      height: 64
+    spriteID: 19f0ee1785beb1649845f047ceeeea64
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 148, y: 940}
+  - name: Pirate Treasure_Frame_42
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 4
+      width: 64
+      height: 64
+    spriteID: e7c5b0598186f584ab6180546bcd2996
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 4}
+  - name: Pirate Treasure_Frame_43
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 042df3fc69c575c468c23a7e2e8c1894
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 76}
+  - name: Pirate Treasure_Frame_44
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 148
+      width: 64
+      height: 64
+    spriteID: f874a5fb4f3d49a468de9cbda5210140
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 148}
+  - name: Pirate Treasure_Frame_45
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 220
+      width: 64
+      height: 64
+    spriteID: 5b6bb91406068074185380bed0a79b2d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 220}
+  - name: Pirate Treasure_Frame_46
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 292
+      width: 64
+      height: 64
+    spriteID: 1a626a7cc544ea345b8b138c239344fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 292}
+  - name: Pirate Treasure_Frame_47
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 364
+      width: 64
+      height: 64
+    spriteID: 977951c420e1e204a8385331ac3552e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 364}
+  - name: Pirate Treasure_Frame_48
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 436
+      width: 64
+      height: 64
+    spriteID: a7390d2d72561db42a1ee7fe26a848d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 436}
+  - name: Pirate Treasure_Frame_49
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 508
+      width: 64
+      height: 64
+    spriteID: b117e7fd01c60624dac2803cc9e56621
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 508}
+  - name: Pirate Treasure_Frame_50
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 580
+      width: 64
+      height: 64
+    spriteID: f40a5d78e14219340b317daa6cf5322c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 580}
+  - name: Pirate Treasure_Frame_51
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 652
+      width: 64
+      height: 64
+    spriteID: 43efde09856deda448a60e10e1485c9b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 652}
+  - name: Pirate Treasure_Frame_52
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 724
+      width: 64
+      height: 64
+    spriteID: 6a232e1beb292c9499e5843be6265dc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 724}
+  - name: Pirate Treasure_Frame_53
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 796
+      width: 64
+      height: 64
+    spriteID: 6a05c53b236372a4f9e50451216f5d8d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 796}
+  - name: Pirate Treasure_Frame_54
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 868
+      width: 64
+      height: 64
+    spriteID: a3de31322d518f7478bda5dd72480f9c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 868}
+  - name: Pirate Treasure_Frame_55
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 940
+      width: 64
+      height: 64
+    spriteID: 854297e530773d3458b00ed0ae0093d5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 940}
+  - name: Pirate Treasure_Frame_56
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 4
+      width: 64
+      height: 64
+    spriteID: 95b3fb7db470ab54e8d874c7b37740c8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 4}
+  - name: Pirate Treasure_Frame_57
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 2a41e6b9771c5a449bf422570358fae4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 76}
+  - name: Pirate Treasure_Frame_58
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 148
+      width: 64
+      height: 64
+    spriteID: 342046547960469438419f572dacce56
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 148}
+  - name: Pirate Treasure_Frame_59
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 220
+      width: 64
+      height: 64
+    spriteID: 9cd8952c9ed18c24e85de874ddfb873d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 220}
+  - name: Pirate Treasure_Frame_60
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 292
+      width: 64
+      height: 64
+    spriteID: 836b6308e780bdd49a83d215b87d472f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 292}
+  - name: Pirate Treasure_Frame_61
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 364
+      width: 64
+      height: 64
+    spriteID: a850caf4ad68c6b439a4676277bfb760
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 364}
+  - name: Pirate Treasure_Frame_62
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 436
+      width: 64
+      height: 64
+    spriteID: d045b8601ed1aa8429b1068bd8c2a255
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 436}
+  - name: Pirate Treasure_Frame_63
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 508
+      width: 64
+      height: 64
+    spriteID: c932bf35a9a560e44876047900dc51df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 508}
+  - name: Pirate Treasure_Frame_64
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 580
+      width: 64
+      height: 64
+    spriteID: b655ff4158c5841448e1c37cb6e9b48f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 580}
+  - name: Pirate Treasure_Frame_65
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 652
+      width: 64
+      height: 64
+    spriteID: e262d6c5a624c154c8a7e7646fac07e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 652}
+  - name: Pirate Treasure_Frame_66
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 724
+      width: 64
+      height: 64
+    spriteID: b2e89a4e4c140814ab4d143bf2000b77
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 724}
+  - name: Pirate Treasure_Frame_67
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 796
+      width: 64
+      height: 64
+    spriteID: e55ce102d191da84185c0122d3edd76f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 796}
+  - name: Pirate Treasure_Frame_68
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 868
+      width: 64
+      height: 64
+    spriteID: 3d71cc9624a7eff42b1d022893cdfbc5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 868}
+  - name: Pirate Treasure_Frame_69
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 292
+      y: 940
+      width: 64
+      height: 64
+    spriteID: baa6d310749967541a195143070cd35e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 292, y: 940}
+  - name: Pirate Treasure_Frame_70
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 4
+      width: 64
+      height: 64
+    spriteID: ab36378e471a78b48a1b862b0fb73187
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 4}
+  - name: Pirate Treasure_Frame_71
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 68a791aeb7a84c844a5e325be39cda33
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 76}
+  - name: Pirate Treasure_Frame_72
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 148
+      width: 64
+      height: 64
+    spriteID: 1538815b56a003d4aa5148081c55b254
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 148}
+  - name: Pirate Treasure_Frame_73
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 220
+      width: 64
+      height: 64
+    spriteID: 5a1c9ac5d167b734e9b38a641f13a46b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 220}
+  - name: Pirate Treasure_Frame_74
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 292
+      width: 64
+      height: 64
+    spriteID: ea57f7d390228174c94332c7e5644e6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 292}
+  - name: Pirate Treasure_Frame_75
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 364
+      width: 64
+      height: 64
+    spriteID: 7a779debaa535464ba0ab6eb48d6c389
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 364}
+  - name: Pirate Treasure_Frame_76
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 436
+      width: 64
+      height: 64
+    spriteID: 75c49948bcb390e47aef94577f893d68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 436}
+  - name: Pirate Treasure_Frame_77
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 508
+      width: 64
+      height: 64
+    spriteID: 44699499ac0e96345ab1434d4ad18963
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 508}
+  - name: Pirate Treasure_Frame_78
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 580
+      width: 64
+      height: 64
+    spriteID: 49ee7e5b38d9a55448d417b64545a774
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 580}
+  - name: Pirate Treasure_Frame_79
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 652
+      width: 64
+      height: 64
+    spriteID: 8d600d5a90c251947b3b758e38d76d91
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 652}
+  - name: Pirate Treasure_Frame_80
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 724
+      width: 64
+      height: 64
+    spriteID: 1764ce0e9ce1357409f6bd1a5fa62a7d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 724}
+  - name: Pirate Treasure_Frame_81
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 796
+      width: 64
+      height: 64
+    spriteID: af9cf5fbd0a7e4d48b4bef84492266ca
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 796}
+  - name: Pirate Treasure_Frame_82
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 868
+      width: 64
+      height: 64
+    spriteID: d0cde00af177f7645aa595ac09ce0ae4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 868}
+  - name: Pirate Treasure_Frame_83
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 364
+      y: 940
+      width: 64
+      height: 64
+    spriteID: 2cc5e4ad3b6bc1d4490593f61ab01b3f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 364, y: 940}
+  - name: Pirate Treasure_Frame_84
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 4
+      width: 64
+      height: 64
+    spriteID: cfe301de6cbbde34f93bd5d1921f0f08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 4}
+  - name: Pirate Treasure_Frame_85
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 3f34526ea195912438d08d30c5aef308
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 76}
+  - name: Pirate Treasure_Frame_86
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 148
+      width: 64
+      height: 64
+    spriteID: e1376a54f0a67784299116eba9c1a5b0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 148}
+  - name: Pirate Treasure_Frame_87
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 220
+      width: 64
+      height: 64
+    spriteID: 820996529a2ad0a419ecd676a5829503
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 220}
+  - name: Pirate Treasure_Frame_88
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 292
+      width: 64
+      height: 64
+    spriteID: 56f3fc3da54cb40479a6ed35abc8fa59
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 292}
+  - name: Pirate Treasure_Frame_89
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 364
+      width: 64
+      height: 64
+    spriteID: ab0dde4b628090744be135001d7f7287
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 364}
+  - name: Pirate Treasure_Frame_90
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 436
+      width: 64
+      height: 64
+    spriteID: 6dd4270e368c6624ab092bf70e14e013
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 436}
+  - name: Pirate Treasure_Frame_91
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 508
+      width: 64
+      height: 64
+    spriteID: 469edd15b844b404bbdbe2420844e5ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 508}
+  - name: Pirate Treasure_Frame_92
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 580
+      width: 64
+      height: 64
+    spriteID: b4d8358d2598ad245a9f0bcd00f30720
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 580}
+  - name: Pirate Treasure_Frame_93
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 652
+      width: 64
+      height: 64
+    spriteID: b2ab127cf97601c409984c9b048bb0f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 652}
+  - name: Pirate Treasure_Frame_94
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 724
+      width: 64
+      height: 64
+    spriteID: 61147d63b681d354d9febeee5fdd7181
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 724}
+  - name: Pirate Treasure_Frame_95
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 796
+      width: 64
+      height: 64
+    spriteID: 6f8803f6d9f7d704c88ab067220cf150
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 796}
+  - name: Pirate Treasure_Frame_96
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 868
+      width: 64
+      height: 64
+    spriteID: 9f31e79a2647fde4a89d72378f780f8c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 868}
+  - name: Pirate Treasure_Frame_97
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 436
+      y: 940
+      width: 64
+      height: 64
+    spriteID: 6cc077730a477ac4a93c6cd175b1055a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 436, y: 940}
+  - name: Pirate Treasure_Frame_98
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 4
+      width: 64
+      height: 64
+    spriteID: d48a0407e2f9bea44a3909e2a59065fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 4}
+  - name: Pirate Treasure_Frame_99
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 9fdb3ec426515d44195d7966fb52ad97
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 76}
+  - name: Pirate Treasure_Frame_100
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 148
+      width: 64
+      height: 64
+    spriteID: 5581a04e365b7394a896241f358261bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 148}
+  - name: Pirate Treasure_Frame_101
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 220
+      width: 64
+      height: 64
+    spriteID: 915f6210631cff047872c3e22f6cf98c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 220}
+  - name: Pirate Treasure_Frame_102
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 292
+      width: 64
+      height: 64
+    spriteID: 467866e37feea7344b615ed124c68f0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 292}
+  - name: Pirate Treasure_Frame_103
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 364
+      width: 64
+      height: 64
+    spriteID: 3f5e253f6d30ada40890bc04196bdb76
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 364}
+  - name: Pirate Treasure_Frame_104
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 436
+      width: 64
+      height: 64
+    spriteID: 0a6ac6d695ffc7f449420ef9c786eacb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 436}
+  - name: Pirate Treasure_Frame_105
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 508
+      width: 64
+      height: 64
+    spriteID: cfd19cdf90f6b9a499eecbad8c3aa26d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 508}
+  - name: Pirate Treasure_Frame_106
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 580
+      width: 64
+      height: 64
+    spriteID: e2903e5ebec082745a09c77c84fab994
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 580}
+  - name: Pirate Treasure_Frame_107
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 652
+      width: 64
+      height: 64
+    spriteID: 603ab9ad30097764eb96dbee5dee1721
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 652}
+  - name: Pirate Treasure_Frame_108
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 724
+      width: 64
+      height: 64
+    spriteID: 927c013bf96676842b6bdb268c0ebf17
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 724}
+  - name: Pirate Treasure_Frame_109
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 796
+      width: 64
+      height: 64
+    spriteID: a1944e51b86b9904ea8ba8341750dae1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 796}
+  - name: Pirate Treasure_Frame_110
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 868
+      width: 64
+      height: 64
+    spriteID: 0ffd0d142897ad641b559faa335fb0d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 868}
+  - name: Pirate Treasure_Frame_111
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 508
+      y: 940
+      width: 64
+      height: 64
+    spriteID: bf2f7320dcaf28e45aac89fd681ac935
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 508, y: 940}
+  - name: Pirate Treasure_Frame_112
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 4
+      width: 64
+      height: 64
+    spriteID: 088db969fa7dd454885b99af0a554716
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 4}
+  - name: Pirate Treasure_Frame_113
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 83bba1f5eac7d104f823847111980e7e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 76}
+  - name: Pirate Treasure_Frame_114
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 148
+      width: 64
+      height: 64
+    spriteID: 44f5ef0fe36d45641834099f66c4459a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 148}
+  - name: Pirate Treasure_Frame_115
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 220
+      width: 64
+      height: 64
+    spriteID: aa2ba567447f4c14ca758946ac75bb96
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 220}
+  - name: Pirate Treasure_Frame_116
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 292
+      width: 64
+      height: 64
+    spriteID: 898d49a1cea13b14298630012307e50d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 292}
+  - name: Pirate Treasure_Frame_117
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 364
+      width: 64
+      height: 64
+    spriteID: e5daae3f077f5434f831a79a3bc022a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 364}
+  - name: Pirate Treasure_Frame_118
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 436
+      width: 64
+      height: 64
+    spriteID: 6bf12b1ad6fd3a34e8617dc186e0d462
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 436}
+  - name: Pirate Treasure_Frame_119
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 508
+      width: 64
+      height: 64
+    spriteID: 9d87cf289366818418aa9a308392f2e3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 508}
+  - name: Pirate Treasure_Frame_120
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 580
+      width: 64
+      height: 64
+    spriteID: 9f52aad217e59454b9952f3ea2e487e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 580}
+  - name: Pirate Treasure_Frame_121
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 652
+      width: 64
+      height: 64
+    spriteID: 14bdfb3e9e284dd4f9f01b92822e92b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 652}
+  - name: Pirate Treasure_Frame_122
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 724
+      width: 64
+      height: 64
+    spriteID: b5aa9b48d83c6394e951ceccd6798191
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 724}
+  - name: Pirate Treasure_Frame_123
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 796
+      width: 64
+      height: 64
+    spriteID: 89b20b59744d29543ad0ffd2d503f2f4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 796}
+  - name: Pirate Treasure_Frame_124
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 868
+      width: 64
+      height: 64
+    spriteID: 38540387599ff4d4c88659bb70dcc5ed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 868}
+  - name: Pirate Treasure_Frame_125
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 580
+      y: 940
+      width: 64
+      height: 64
+    spriteID: 2a69f508bb019d54db7559123f00fa2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 580, y: 940}
+  - name: Pirate Treasure_Frame_126
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 652
+      y: 4
+      width: 64
+      height: 64
+    spriteID: abad170f986778443badc1d0e1732384
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 4}
+  - name: Pirate Treasure_Frame_127
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 652
+      y: 76
+      width: 64
+      height: 64
+    spriteID: 5a28ba519f34aa741b3a4e9ebfc09f4a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 652, y: 76}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -450748280
+    name: Pirate Treasure
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Pirate Treasure_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: ad67b1cd0b55b5541a534b579a46440f
+    - name: Pirate Treasure_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: eedaec539a7ce8f40a289751ec149eb3
+    - name: Pirate Treasure_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e9d3c3ec1f6eccd499c3c7dbabb318c7
+    - name: Pirate Treasure_Frame_3
+      frameIndex: 3
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 2c95b4ee27ba8b24bb66dbfb3b841ea0
+    - name: Pirate Treasure_Frame_4
+      frameIndex: 4
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6502a324dbed5124fa2668b0e4f03a7e
+    - name: Pirate Treasure_Frame_5
+      frameIndex: 5
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 8ad22f8c3ac77b04b9b4009c0131d756
+    - name: Pirate Treasure_Frame_6
+      frameIndex: 6
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: cf9b6dd25e5ad98438be0d8ae2ef41d1
+    - name: Pirate Treasure_Frame_7
+      frameIndex: 7
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 7a7cce91e302e1b4dadec5e7ce899032
+    - name: Pirate Treasure_Frame_8
+      frameIndex: 8
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: f2a7b69c8206aaa448980319a191372f
+    - name: Pirate Treasure_Frame_9
+      frameIndex: 9
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 2b8949840f062a842b965ece6b7c665e
+    - name: Pirate Treasure_Frame_10
+      frameIndex: 10
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: a92f2063134d48245bcd59c9a34603e4
+    - name: Pirate Treasure_Frame_11
+      frameIndex: 11
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: c31934497299f094cabbdc6e86afb53c
+    - name: Pirate Treasure_Frame_12
+      frameIndex: 12
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: a62d8b3fa2fb6ca4598144e1da71b055
+    - name: Pirate Treasure_Frame_13
+      frameIndex: 13
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 623426258db2550479f8fbbbb4938a0e
+    - name: Pirate Treasure_Frame_14
+      frameIndex: 14
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: ae67adb603b427c4e93e301c45ab6093
+    - name: Pirate Treasure_Frame_15
+      frameIndex: 15
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 17d4aad9721c7124c8488d48c5a80f94
+    - name: Pirate Treasure_Frame_16
+      frameIndex: 16
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6756511fea59f8540a11d90818fbcc86
+    - name: Pirate Treasure_Frame_17
+      frameIndex: 17
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: c88f19494b2a854449b4a727a0f23374
+    - name: Pirate Treasure_Frame_18
+      frameIndex: 18
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: a648ea7c72cc0b94bb6dc1b5668b983a
+    - name: Pirate Treasure_Frame_19
+      frameIndex: 19
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 82af2b0bb93c4ee4894bc17444a60492
+    - name: Pirate Treasure_Frame_20
+      frameIndex: 20
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 4dac37320f6158b47928ce4782ce0920
+    - name: Pirate Treasure_Frame_21
+      frameIndex: 21
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: abf9a391f00245a46a9ea47e2f3c7994
+    - name: Pirate Treasure_Frame_22
+      frameIndex: 22
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e54fb37b1c6718248ab7e62333a35940
+    - name: Pirate Treasure_Frame_23
+      frameIndex: 23
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 584cfed45aa22c648a0ddac7c4a8c989
+    - name: Pirate Treasure_Frame_24
+      frameIndex: 24
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: c52202353d2ef914b850e4d67ba359e3
+    - name: Pirate Treasure_Frame_25
+      frameIndex: 25
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 1ecf280d92616864097478caccdf5983
+    - name: Pirate Treasure_Frame_26
+      frameIndex: 26
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 916041c85f6baef4fa7242d057a431bc
+    - name: Pirate Treasure_Frame_27
+      frameIndex: 27
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: ec0362a5bde4324469fdf9da1e597703
+    - name: Pirate Treasure_Frame_28
+      frameIndex: 28
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e445cb2ca979cdc4893fecefe53d33ac
+    - name: Pirate Treasure_Frame_29
+      frameIndex: 29
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 8a1de4de156c0b84d964795077d71fb1
+    - name: Pirate Treasure_Frame_30
+      frameIndex: 30
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: cbcf96afc2e3bf84584b9ddd233abee9
+    - name: Pirate Treasure_Frame_31
+      frameIndex: 31
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 7d2f753bcd4921b43849791d94168da7
+    - name: Pirate Treasure_Frame_32
+      frameIndex: 32
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 3588c548c22e45e429eaacd30b66303b
+    - name: Pirate Treasure_Frame_33
+      frameIndex: 33
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 0b5fcf53ae5701e4494f8d4863f1eb59
+    - name: Pirate Treasure_Frame_34
+      frameIndex: 34
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6cd2fce6a10277d47861cce2caddcae3
+    - name: Pirate Treasure_Frame_35
+      frameIndex: 35
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: ab5394b76b315424682a2ca207b4c93f
+    - name: Pirate Treasure_Frame_36
+      frameIndex: 36
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 57f690906ace4a345b63064ba48edd44
+    - name: Pirate Treasure_Frame_37
+      frameIndex: 37
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 5a3067cccf5917d4b863066cc2551004
+    - name: Pirate Treasure_Frame_38
+      frameIndex: 38
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: ea6168e3c3337d34db5d442a9f1f8298
+    - name: Pirate Treasure_Frame_39
+      frameIndex: 39
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: b30178a70eb76e149adb7deddb1fba93
+    - name: Pirate Treasure_Frame_40
+      frameIndex: 40
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 870ecdf97b0b2014d92f6b0c3523c8a0
+    - name: Pirate Treasure_Frame_41
+      frameIndex: 41
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 19f0ee1785beb1649845f047ceeeea64
+    - name: Pirate Treasure_Frame_42
+      frameIndex: 42
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e7c5b0598186f584ab6180546bcd2996
+    - name: Pirate Treasure_Frame_43
+      frameIndex: 43
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 042df3fc69c575c468c23a7e2e8c1894
+    - name: Pirate Treasure_Frame_44
+      frameIndex: 44
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: f874a5fb4f3d49a468de9cbda5210140
+    - name: Pirate Treasure_Frame_45
+      frameIndex: 45
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 5b6bb91406068074185380bed0a79b2d
+    - name: Pirate Treasure_Frame_46
+      frameIndex: 46
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 1a626a7cc544ea345b8b138c239344fd
+    - name: Pirate Treasure_Frame_47
+      frameIndex: 47
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 977951c420e1e204a8385331ac3552e1
+    - name: Pirate Treasure_Frame_48
+      frameIndex: 48
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: a7390d2d72561db42a1ee7fe26a848d9
+    - name: Pirate Treasure_Frame_49
+      frameIndex: 49
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: b117e7fd01c60624dac2803cc9e56621
+    - name: Pirate Treasure_Frame_50
+      frameIndex: 50
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: f40a5d78e14219340b317daa6cf5322c
+    - name: Pirate Treasure_Frame_51
+      frameIndex: 51
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 43efde09856deda448a60e10e1485c9b
+    - name: Pirate Treasure_Frame_52
+      frameIndex: 52
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6a232e1beb292c9499e5843be6265dc1
+    - name: Pirate Treasure_Frame_53
+      frameIndex: 53
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6a05c53b236372a4f9e50451216f5d8d
+    - name: Pirate Treasure_Frame_54
+      frameIndex: 54
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: a3de31322d518f7478bda5dd72480f9c
+    - name: Pirate Treasure_Frame_55
+      frameIndex: 55
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 854297e530773d3458b00ed0ae0093d5
+    - name: Pirate Treasure_Frame_56
+      frameIndex: 56
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 95b3fb7db470ab54e8d874c7b37740c8
+    - name: Pirate Treasure_Frame_57
+      frameIndex: 57
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 2a41e6b9771c5a449bf422570358fae4
+    - name: Pirate Treasure_Frame_58
+      frameIndex: 58
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 342046547960469438419f572dacce56
+    - name: Pirate Treasure_Frame_59
+      frameIndex: 59
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 9cd8952c9ed18c24e85de874ddfb873d
+    - name: Pirate Treasure_Frame_60
+      frameIndex: 60
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 836b6308e780bdd49a83d215b87d472f
+    - name: Pirate Treasure_Frame_61
+      frameIndex: 61
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: a850caf4ad68c6b439a4676277bfb760
+    - name: Pirate Treasure_Frame_62
+      frameIndex: 62
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: d045b8601ed1aa8429b1068bd8c2a255
+    - name: Pirate Treasure_Frame_63
+      frameIndex: 63
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: c932bf35a9a560e44876047900dc51df
+    - name: Pirate Treasure_Frame_64
+      frameIndex: 64
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: b655ff4158c5841448e1c37cb6e9b48f
+    - name: Pirate Treasure_Frame_65
+      frameIndex: 65
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e262d6c5a624c154c8a7e7646fac07e7
+    - name: Pirate Treasure_Frame_66
+      frameIndex: 66
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: b2e89a4e4c140814ab4d143bf2000b77
+    - name: Pirate Treasure_Frame_67
+      frameIndex: 67
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e55ce102d191da84185c0122d3edd76f
+    - name: Pirate Treasure_Frame_68
+      frameIndex: 68
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 3d71cc9624a7eff42b1d022893cdfbc5
+    - name: Pirate Treasure_Frame_69
+      frameIndex: 69
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: baa6d310749967541a195143070cd35e
+    - name: Pirate Treasure_Frame_70
+      frameIndex: 70
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: ab36378e471a78b48a1b862b0fb73187
+    - name: Pirate Treasure_Frame_71
+      frameIndex: 71
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 68a791aeb7a84c844a5e325be39cda33
+    - name: Pirate Treasure_Frame_72
+      frameIndex: 72
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 1538815b56a003d4aa5148081c55b254
+    - name: Pirate Treasure_Frame_73
+      frameIndex: 73
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 5a1c9ac5d167b734e9b38a641f13a46b
+    - name: Pirate Treasure_Frame_74
+      frameIndex: 74
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: ea57f7d390228174c94332c7e5644e6c
+    - name: Pirate Treasure_Frame_75
+      frameIndex: 75
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 7a779debaa535464ba0ab6eb48d6c389
+    - name: Pirate Treasure_Frame_76
+      frameIndex: 76
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 75c49948bcb390e47aef94577f893d68
+    - name: Pirate Treasure_Frame_77
+      frameIndex: 77
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 44699499ac0e96345ab1434d4ad18963
+    - name: Pirate Treasure_Frame_78
+      frameIndex: 78
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 49ee7e5b38d9a55448d417b64545a774
+    - name: Pirate Treasure_Frame_79
+      frameIndex: 79
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 8d600d5a90c251947b3b758e38d76d91
+    - name: Pirate Treasure_Frame_80
+      frameIndex: 80
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 1764ce0e9ce1357409f6bd1a5fa62a7d
+    - name: Pirate Treasure_Frame_81
+      frameIndex: 81
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: af9cf5fbd0a7e4d48b4bef84492266ca
+    - name: Pirate Treasure_Frame_82
+      frameIndex: 82
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: d0cde00af177f7645aa595ac09ce0ae4
+    - name: Pirate Treasure_Frame_83
+      frameIndex: 83
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 2cc5e4ad3b6bc1d4490593f61ab01b3f
+    - name: Pirate Treasure_Frame_84
+      frameIndex: 84
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: cfe301de6cbbde34f93bd5d1921f0f08
+    - name: Pirate Treasure_Frame_85
+      frameIndex: 85
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 3f34526ea195912438d08d30c5aef308
+    - name: Pirate Treasure_Frame_86
+      frameIndex: 86
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e1376a54f0a67784299116eba9c1a5b0
+    - name: Pirate Treasure_Frame_87
+      frameIndex: 87
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 820996529a2ad0a419ecd676a5829503
+    - name: Pirate Treasure_Frame_88
+      frameIndex: 88
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 56f3fc3da54cb40479a6ed35abc8fa59
+    - name: Pirate Treasure_Frame_89
+      frameIndex: 89
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: ab0dde4b628090744be135001d7f7287
+    - name: Pirate Treasure_Frame_90
+      frameIndex: 90
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6dd4270e368c6624ab092bf70e14e013
+    - name: Pirate Treasure_Frame_91
+      frameIndex: 91
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 469edd15b844b404bbdbe2420844e5ba
+    - name: Pirate Treasure_Frame_92
+      frameIndex: 92
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: b4d8358d2598ad245a9f0bcd00f30720
+    - name: Pirate Treasure_Frame_93
+      frameIndex: 93
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: b2ab127cf97601c409984c9b048bb0f4
+    - name: Pirate Treasure_Frame_94
+      frameIndex: 94
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 61147d63b681d354d9febeee5fdd7181
+    - name: Pirate Treasure_Frame_95
+      frameIndex: 95
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6f8803f6d9f7d704c88ab067220cf150
+    - name: Pirate Treasure_Frame_96
+      frameIndex: 96
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 9f31e79a2647fde4a89d72378f780f8c
+    - name: Pirate Treasure_Frame_97
+      frameIndex: 97
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6cc077730a477ac4a93c6cd175b1055a
+    - name: Pirate Treasure_Frame_98
+      frameIndex: 98
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: d48a0407e2f9bea44a3909e2a59065fd
+    - name: Pirate Treasure_Frame_99
+      frameIndex: 99
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 9fdb3ec426515d44195d7966fb52ad97
+    - name: Pirate Treasure_Frame_100
+      frameIndex: 100
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 5581a04e365b7394a896241f358261bf
+    - name: Pirate Treasure_Frame_101
+      frameIndex: 101
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 915f6210631cff047872c3e22f6cf98c
+    - name: Pirate Treasure_Frame_102
+      frameIndex: 102
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 467866e37feea7344b615ed124c68f0b
+    - name: Pirate Treasure_Frame_103
+      frameIndex: 103
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 3f5e253f6d30ada40890bc04196bdb76
+    - name: Pirate Treasure_Frame_104
+      frameIndex: 104
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 0a6ac6d695ffc7f449420ef9c786eacb
+    - name: Pirate Treasure_Frame_105
+      frameIndex: 105
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: cfd19cdf90f6b9a499eecbad8c3aa26d
+    - name: Pirate Treasure_Frame_106
+      frameIndex: 106
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e2903e5ebec082745a09c77c84fab994
+    - name: Pirate Treasure_Frame_107
+      frameIndex: 107
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 603ab9ad30097764eb96dbee5dee1721
+    - name: Pirate Treasure_Frame_108
+      frameIndex: 108
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 927c013bf96676842b6bdb268c0ebf17
+    - name: Pirate Treasure_Frame_109
+      frameIndex: 109
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: a1944e51b86b9904ea8ba8341750dae1
+    - name: Pirate Treasure_Frame_110
+      frameIndex: 110
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 0ffd0d142897ad641b559faa335fb0d0
+    - name: Pirate Treasure_Frame_111
+      frameIndex: 111
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: bf2f7320dcaf28e45aac89fd681ac935
+    - name: Pirate Treasure_Frame_112
+      frameIndex: 112
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 088db969fa7dd454885b99af0a554716
+    - name: Pirate Treasure_Frame_113
+      frameIndex: 113
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 83bba1f5eac7d104f823847111980e7e
+    - name: Pirate Treasure_Frame_114
+      frameIndex: 114
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 44f5ef0fe36d45641834099f66c4459a
+    - name: Pirate Treasure_Frame_115
+      frameIndex: 115
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: aa2ba567447f4c14ca758946ac75bb96
+    - name: Pirate Treasure_Frame_116
+      frameIndex: 116
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 898d49a1cea13b14298630012307e50d
+    - name: Pirate Treasure_Frame_117
+      frameIndex: 117
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: e5daae3f077f5434f831a79a3bc022a7
+    - name: Pirate Treasure_Frame_118
+      frameIndex: 118
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 6bf12b1ad6fd3a34e8617dc186e0d462
+    - name: Pirate Treasure_Frame_119
+      frameIndex: 119
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 9d87cf289366818418aa9a308392f2e3
+    - name: Pirate Treasure_Frame_120
+      frameIndex: 120
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 9f52aad217e59454b9952f3ea2e487e1
+    - name: Pirate Treasure_Frame_121
+      frameIndex: 121
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 14bdfb3e9e284dd4f9f01b92822e92b4
+    - name: Pirate Treasure_Frame_122
+      frameIndex: 122
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: b5aa9b48d83c6394e951ceccd6798191
+    - name: Pirate Treasure_Frame_123
+      frameIndex: 123
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 89b20b59744d29543ad0ffd2d503f2f4
+    - name: Pirate Treasure_Frame_124
+      frameIndex: 124
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 38540387599ff4d4c88659bb70dcc5ed
+    - name: Pirate Treasure_Frame_125
+      frameIndex: 125
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 2a69f508bb019d54db7559123f00fa2c
+    - name: Pirate Treasure_Frame_126
+      frameIndex: 126
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: abad170f986778443badc1d0e1732384
+    - name: Pirate Treasure_Frame_127
+      frameIndex: 127
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      spriteId: 5a28ba519f34aa741b3a4e9ebfc09f4a
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 64}
