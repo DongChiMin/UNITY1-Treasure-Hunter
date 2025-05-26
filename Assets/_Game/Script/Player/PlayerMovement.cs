@@ -27,7 +27,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private PlayerContext playerContext;
     public bool canDoubleJump;
     public bool canDash;
-    public bool isLookDown;
     void Start()
     {
         OnInit();    
@@ -37,18 +36,17 @@ public class PlayerMovement : MonoBehaviour
     {
         canDash = true;
         canDoubleJump = true;
-        isLookDown = false;
     }
 
     private void Update()
     {
         if(input.lookDownKeyPressed)
         {
-            isLookDown = true;
+            CameraManager.Instance.LookDownCamera(lookDownDistance);
         }
         else
         {
-            isLookDown = false;
+            CameraManager.Instance.LookNormalCamera();
         }
     }
 

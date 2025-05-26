@@ -4,22 +4,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraManager : MonoBehaviour
+public class CameraManager : Singleton<CameraManager>
 {
     [SerializeField] PlayerMovement player;
 
     [SerializeField] CinemachineVirtualCamera rightCamera;
     [SerializeField] CinemachineVirtualCamera leftCamera;
     [SerializeField] CinemachineVirtualCamera fallCamera;
-
     private CinemachineVirtualCamera currentCVCamera;
+
     [Header("DEBUG")]
     //DEBUG
     [SerializeField] private CinemachineFramingTransposer currentTransposer;
     //transposer
     [SerializeField] private CinemachineFramingTransposer rightTransposer;
     [SerializeField] private CinemachineFramingTransposer leftTransposer;
-    [SerializeField]  private CinemachineFramingTransposer fallTransposer;
+    [SerializeField] private CinemachineFramingTransposer fallTransposer;
+
+    private Dictionary<CinemachineVirtualCamera, CinemachineFramingTransposer> cameraMap = new Dictionary<CinemachineVirtualCamera, CinemachineFramingTransposer>();
+
+    //Xử lý delay tránh spam đổi hướng nhanh
+    private Coroutine directionCoroutine;
+    [SerializeField] private int currentFacingDirection = 1;
 
     private void Start()
     {
@@ -28,30 +34,70 @@ public class CameraManager : MonoBehaviour
         rightTransposer = rightCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
         leftTransposer = leftCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
         fallTransposer = fallCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
+
+        cameraMap.Add(rightCamera, rightTransposer);
+        cameraMap.Add(leftCamera, leftTransposer);
+        cameraMap.Add(fallCamera, fallTransposer);
+
+        SetCamera(rightCamera);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(player.transform.localScale.x == -1)
-        {
-      
-            rightCamera.gameObject.SetActive(false);
-            leftCamera.gameObject.SetActive(true);
-            fallCamera.gameObject.SetActive(false);
+        //Nếu người chơi đổi hướng liên tục thì không đổi camera, chỉ đổi khi người chơi vẫn giữ đúng hướng hơn 0.2s
+        //Chỉ đổi camera sau một khoảng thời gian (ví dụ: 0.5s) nếu hướng không thay đổi trong thời gian đó.
 
-            currentCVCamera = leftCamera;
-            currentTransposer = leftTransposer;
-        }
-        else
+        int inputDirection = player.transform.localScale.x > 0 ? 1 : -1;
+        //nếu input khác hướng hiện tại --> chạy code
+        if (inputDirection != currentFacingDirection)
         {
-            leftCamera.gameObject.SetActive(false);
-            rightCamera.gameObject.SetActive(true);
-            fallCamera.gameObject.SetActive(false);
-
-            currentCVCamera = rightCamera;
-            currentTransposer = rightTransposer;
+            //Trước đó đang chuẩn bị đổi hướng --> hủy
+            if(directionCoroutine != null)
+            {
+                StopCoroutine(directionCoroutine);
+            }
+            currentFacingDirection = inputDirection;
+            directionCoroutine = StartCoroutine(DelayedCameraSwitch(inputDirection));
         }
+    }
+
+    IEnumerator DelayedCameraSwitch(int newDirection)
+    {
+        yield return new WaitForSeconds(0.3f);
+        if(player.transform.localScale.x > 0.1f && newDirection == 1)
+        {
+            SetCamera(rightCamera);
+            currentFacingDirection = 1;
+        }
+        else if (player.transform.localScale.x < -0.1f && newDirection == -1)
+        {
+            SetCamera(leftCamera);
+            currentFacingDirection = -1;
+        }
+
+        directionCoroutine = null;
+    }
+
+    private void SetCamera(CinemachineVirtualCamera targetCam)
+    {
+        foreach(var pair in cameraMap)
+        {
+            if(pair.Key == targetCam)
+            {
+                targetCam.gameObject.SetActive(true);
+                currentCVCamera = targetCam;
+                currentTransposer = pair.Value;
+            }
+            else
+            {
+                pair.Key.gameObject.SetActive(false);
+            }
+        }
+    }
+
+    public void LookDownCamera(float lookDownDistance)
+    {
         //Kiểm tra nếu trước mặt nhân vật không có nền đất --> Hạ camera xuống một chút
         //Sử dụng overlapSphere để check nếu không có nền đất
 
@@ -61,19 +107,17 @@ public class CameraManager : MonoBehaviour
         //Nếu trước mặt không có mặt đất --> có thể nhìn xuống
         if (hit == null)
         {
-            if (player.isLookDown)
-            {
-                currentTransposer.m_ScreenY = player.lookDownDistance;
-            }
-            else
-            {
-                currentTransposer.m_ScreenY = 0.7f;
-            }
+            currentTransposer.m_ScreenY = lookDownDistance;
         }
         else
         {
-            currentTransposer.m_ScreenY = 0.7f;
+            LookNormalCamera();
         }
+    }
+
+    public void LookNormalCamera()
+    {
+        currentTransposer.m_ScreenY = 0.7f;
     }
 
     void OnDrawGizmos()
