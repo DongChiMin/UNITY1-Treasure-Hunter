@@ -14,6 +14,10 @@ public class PlayerFallState : PlayerBaseState<Player>
 
     public void OnExecute(Player player)
     {
+        if(player.rb.velocity.y < player.maxFallSpeed)
+        {
+            player.rb.velocity = new Vector2(player.rb.velocity.x, player.maxFallSpeed);
+        }
         if (player.input.jumpKeyPressed && player.canDoubleJump)
         {
             player.ChangeState(player.doubleJumpState);

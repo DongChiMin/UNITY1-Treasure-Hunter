@@ -16,7 +16,7 @@ public class CloudMovement : MonoBehaviour
         transform.Translate(Vector3.left * speed * Time.deltaTime);
         if(transform.position.x - target.position.x < 0.1f)
         {
-            transform.position = new Vector3(transform.position.x + 30, Random.Range(0f, 6f), 0);
+            transform.position = new Vector3(transform.position.x + 30, Random.Range(1f, 8f), 0);
         }
     }
 }

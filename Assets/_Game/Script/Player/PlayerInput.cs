@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     public bool attackKeyPressed;
     public bool throwKeyPressed;
     public bool dashKeyPressed;
+    public bool lookDownKeyPressed;
     
     void Update()
     {
@@ -17,5 +18,6 @@ public class PlayerInput : MonoBehaviour
         attackKeyPressed = Input.GetMouseButtonDown(0);
         throwKeyPressed = Input.GetMouseButtonDown(1);
         dashKeyPressed = Input.GetKeyDown(KeyCode.LeftShift);
+        lookDownKeyPressed = Input.GetKey(KeyCode.S);
     }
 }

@@ -24,11 +24,13 @@ public class Player : MonoBehaviour
     //Cac bien thay doi gia tri ngoai class: rb, canDoubleJump, input.horizontal, canStartCombo, canStartAirCombo
     [Header("Editable")]
     [SerializeField] private float jumpForce;
+    public float maxFallSpeed;
     [SerializeField] public float dashForce;
     public float moveSpeed;
     public float moveSpeedWhenAttacking;
     public float startComboCooldown;
     public float dashCooldown;
+    public float lookDownDistance;
 
     [Header("Public Variable")]
     public bool canDoubleJump;
@@ -37,6 +39,7 @@ public class Player : MonoBehaviour
     public bool canStartAirCombo;
     public bool haveSword;
     public bool imortal;
+    public bool isLookDown;
 
     [Header("Drag Variable")]
     public Animator animator;
@@ -66,6 +69,14 @@ public class Player : MonoBehaviour
         if(currentState != null)
         {
             currentState.OnExecute(this);
+        }
+        if(input.lookDownKeyPressed)
+        {
+            isLookDown = true;
+        }
+        else
+        {
+            isLookDown = false;
         }
     }
 
