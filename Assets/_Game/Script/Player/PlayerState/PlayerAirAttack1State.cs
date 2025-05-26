@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerAirAttack1State : PlayerBaseState<Player>
+public class PlayerAirAttack1State : PlayerBaseState<PlayerMovement>
 {
     bool goNextCombo;
     float previousGravityScale;
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         player.canStartAirCombo = false;
         goNextCombo = false;
@@ -18,22 +18,22 @@ public class PlayerAirAttack1State : PlayerBaseState<Player>
         player.rb.velocity = Vector2.zero;
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
 
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
 
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
         player.rb.gravityScale = previousGravityScale;
     }
 
-    IEnumerator WaitForAnimation(Player player)
+    IEnumerator WaitForAnimation(PlayerMovement player)
     {
         //Particle
         PoolManager.Instance.poolAirAttack1.GetFromPool(

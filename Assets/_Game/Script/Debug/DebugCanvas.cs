@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class DebugCanvas : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI currentState;
-    [SerializeField] Player player;
+    [SerializeField] PlayerMovement player;
 
     private void Update()
     {

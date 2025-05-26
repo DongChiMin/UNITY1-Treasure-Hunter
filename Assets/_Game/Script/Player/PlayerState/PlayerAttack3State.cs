@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAttack3State : PlayerBaseState<Player>
+public class PlayerAttack3State : PlayerBaseState<PlayerMovement>
 {
     float previousMoveSpeed;
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         player.rb.velocity = Vector3.zero;
         previousMoveSpeed = player.moveSpeed;
@@ -15,23 +15,23 @@ public class PlayerAttack3State : PlayerBaseState<Player>
         player.StartCoroutine(WaitForAnimation(player));
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
         player.FlipPlayer();
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
         player.MovePlayer();
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
         player.rb.velocity = Vector2.zero;
         player.moveSpeed = previousMoveSpeed;
     }
 
-    IEnumerator WaitForAnimation(Player player)
+    IEnumerator WaitForAnimation(PlayerMovement player)
     {
         //Particle
         PoolManager.Instance.poolAttack3.GetFromPool(
@@ -73,7 +73,7 @@ public class PlayerAttack3State : PlayerBaseState<Player>
         player.ChangeState(player.idleState);
     }
 
-    IEnumerator StartComboDelay(Player player)
+    IEnumerator StartComboDelay(PlayerMovement player)
     {
         yield return new WaitForSeconds(player.startComboCooldown);
         player.canStartCombo = true;

@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerIdleState : PlayerBaseState<Player>
+public class PlayerIdleState : PlayerBaseState<PlayerMovement>
 {
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         player.ChangeAnim("Idle");
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
         if(Mathf.Abs(player.input.horizontal) > 0.1f)
         {
@@ -39,12 +39,12 @@ public class PlayerIdleState : PlayerBaseState<Player>
         }
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
 
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
 
     }

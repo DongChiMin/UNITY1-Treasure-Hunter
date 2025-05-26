@@ -6,22 +6,25 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    [SerializeField] Player player;
+    [SerializeField] PlayerMovement player;
 
     [SerializeField] CinemachineVirtualCamera rightCamera;
     [SerializeField] CinemachineVirtualCamera leftCamera;
     [SerializeField] CinemachineVirtualCamera fallCamera;
 
     private CinemachineVirtualCamera currentCVCamera;
-    private CinemachineFramingTransposer currentTransposer;
-
+    [Header("DEBUG")]
+    //DEBUG
+    [SerializeField] private CinemachineFramingTransposer currentTransposer;
     //transposer
-    private CinemachineFramingTransposer rightTransposer;
-    private CinemachineFramingTransposer leftTransposer;
-    private CinemachineFramingTransposer fallTransposer;
+    [SerializeField] private CinemachineFramingTransposer rightTransposer;
+    [SerializeField] private CinemachineFramingTransposer leftTransposer;
+    [SerializeField]  private CinemachineFramingTransposer fallTransposer;
 
     private void Start()
     {
+        //Phải enable VC thì mới get được, nếu không sẽ bị null á bro
+
         rightTransposer = rightCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
         leftTransposer = leftCamera.GetCinemachineComponent<CinemachineFramingTransposer>();
         fallTransposer = fallCamera.GetCinemachineComponent<CinemachineFramingTransposer>();

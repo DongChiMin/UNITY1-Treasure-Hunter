@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     [SerializeField] Transform attackPoint;
-    [SerializeField] Player player;
+    [SerializeField] PlayerMovement player;
     [SerializeField] int attackDamage;
-    PlayerBaseState<Player> previousState;
+    PlayerBaseState<PlayerMovement> previousState;
     LayerMask enemyLayer;
 
     private void Start()

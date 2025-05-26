@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDashState : PlayerBaseState<Player>
+public class PlayerDashState : PlayerBaseState<PlayerMovement>
 {
     float previousGravityScale;
     float dashEndTime;
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         previousGravityScale = player.rb.gravityScale;
         dashEndTime = Time.time + 0.25f;
@@ -20,7 +20,7 @@ public class PlayerDashState : PlayerBaseState<Player>
         player.StartCoroutine(GhostDashEffect(player));
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
         if(Time.time >= dashEndTime)
         {
@@ -33,24 +33,24 @@ public class PlayerDashState : PlayerBaseState<Player>
         }
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
 
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
         player.rb.gravityScale = previousGravityScale;
         player.StartCoroutine(CanDashReset(player));
     }
 
-    IEnumerator CanDashReset(Player player)
+    IEnumerator CanDashReset(PlayerMovement player)
     {
         yield return new WaitForSeconds(player.dashCooldown);
         player.canDash = true;
     }
 
-    IEnumerator GhostDashEffect(Player player)
+    IEnumerator GhostDashEffect(PlayerMovement player)
     {
         int cnt = 1;
         while(cnt <= 5)

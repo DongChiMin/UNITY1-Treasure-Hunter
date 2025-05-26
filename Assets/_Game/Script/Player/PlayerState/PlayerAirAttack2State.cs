@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAirAttack2State : PlayerBaseState<Player>
+public class PlayerAirAttack2State : PlayerBaseState<PlayerMovement>
 {
     float previousGravityScale;
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         previousGravityScale = player.rb.gravityScale;
         player.ChangeAnim("Air Attack 2");
@@ -14,22 +14,22 @@ public class PlayerAirAttack2State : PlayerBaseState<Player>
         player.rb.velocity = Vector2.zero;
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
 
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
 
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
         player.rb.gravityScale = previousGravityScale;
     }
 
-    IEnumerator WaitForAnimation(Player player)
+    IEnumerator WaitForAnimation(PlayerMovement player)
     {
         //Particle
         PoolManager.Instance.poolAirAttack1.GetFromPool(

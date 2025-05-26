@@ -6,19 +6,18 @@ public class BackgroundMovement : MonoBehaviour
 {
     [SerializeField] GameObject cam;
     [SerializeField] private float parallaxEffect;
-    private float startPos;
+    [SerializeField] private Vector3 startPos;
+    //private float startPos;
     
-    // Start is called before the first frame update
     void Start()
     {
-        startPos = transform.position.x;
+        //startPos = transform.position.x;
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         float distance = cam.transform.position.x * parallaxEffect;
 
-        transform.position = new Vector3(startPos + distance, transform.position.y, transform.position.z);
+        transform.position = new Vector3(startPos.x + distance, transform.position.y, transform.position.z);
     }
 }

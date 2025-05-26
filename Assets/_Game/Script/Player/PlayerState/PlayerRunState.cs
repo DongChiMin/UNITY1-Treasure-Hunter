@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
-public class PlayerRunState : PlayerBaseState<Player>
+public class PlayerRunState : PlayerBaseState<PlayerMovement>
 {
     bool particleOn;
     Coroutine crt;
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         player.ChangeAnim("Run");
         particleOn = true;
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
         float horizontal = player.input.horizontal;
 
@@ -57,18 +57,18 @@ public class PlayerRunState : PlayerBaseState<Player>
         }
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
         player.MovePlayer();
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
         player.rb.velocity = Vector2.zero;
         if(crt != null) player.StopCoroutine(crt);
     }
 
-    IEnumerator RunParticleDelay(Player player)
+    IEnumerator RunParticleDelay(PlayerMovement player)
     {
         float time = 0f;
 

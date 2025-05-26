@@ -2,31 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHitState : PlayerBaseState<Player>
+public class PlayerHitState : PlayerBaseState<PlayerMovement>
 {
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         player.imortal = true;
         player.ChangeAnim("Hit");
         player.StartCoroutine(WaitForAnimation(player));
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
         player.FlipPlayer();
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
         player.MovePlayer();
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
 
     }
 
-    IEnumerator WaitForAnimation(Player player)
+    IEnumerator WaitForAnimation(PlayerMovement player)
     {
         yield return new WaitForEndOfFrame();
         yield return new WaitForSeconds(player.animator.GetCurrentAnimatorStateInfo(1).length);

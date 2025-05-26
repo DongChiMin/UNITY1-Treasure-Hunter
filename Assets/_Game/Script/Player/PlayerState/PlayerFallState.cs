@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerFallState : PlayerBaseState<Player>
+public class PlayerFallState : PlayerBaseState<PlayerMovement>
 {
     LayerMask groundMask;
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         groundMask = LayerMask.GetMask("Ground");
         player.ChangeAnim("Fall");
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
         if(player.rb.velocity.y < player.maxFallSpeed)
         {
@@ -48,12 +48,12 @@ public class PlayerFallState : PlayerBaseState<Player>
         player.FlipPlayer();
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
         player.MovePlayer();
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
         player.rb.velocity = Vector2.zero;
     }

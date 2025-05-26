@@ -4,11 +4,11 @@ using UnityEditor;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerThrowSwordState : PlayerBaseState<Player>
+public class PlayerThrowSwordState : PlayerBaseState<PlayerMovement>
 {
     float previousGravityScale; 
 
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         previousGravityScale = player.rb.gravityScale;
         player.rb.gravityScale = 0.25f;
@@ -17,21 +17,21 @@ public class PlayerThrowSwordState : PlayerBaseState<Player>
         player.StartCoroutine(WaitForAnimation(player));
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
         player.rb.velocity = Vector2.zero;
         player.rb.gravityScale = previousGravityScale;
     }
 
-    IEnumerator WaitForAnimation(Player player)
+    IEnumerator WaitForAnimation(PlayerMovement player)
     {
         yield return new WaitForEndOfFrame();
         float animLength = player.animator.GetCurrentAnimatorStateInfo(1).length;

@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerGroundState : PlayerBaseState<Player>
+public class PlayerGroundState : PlayerBaseState<PlayerMovement>
 {
     bool canParticle = true;
     Coroutine crt;
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         if (canParticle)
         {
@@ -20,22 +20,22 @@ public class PlayerGroundState : PlayerBaseState<Player>
 
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
 
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
 
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
         if (crt != null) player.StopCoroutine(crt);
     }
 
-    IEnumerator WaitForAnimation(Player player)
+    IEnumerator WaitForAnimation(PlayerMovement player)
     {
         if (Mathf.Abs(player.input.horizontal) > 0.1f)
         {

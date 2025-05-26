@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerJumpState : PlayerBaseState<Player>
+public class PlayerJumpState : PlayerBaseState<PlayerMovement>
 {
-    public void OnEnter(Player player)
+    public void OnEnter(PlayerMovement player)
     {
         PoolManager.Instance.poolJump.GetFromPool(player.transform.position + Vector3.down*0.05f, Quaternion.identity, player.transform.localScale);
         player.ChangeAnim("Jump");
         player.JumpPlayer();
     }
 
-    public void OnExecute(Player player)
+    public void OnExecute(PlayerMovement player)
     {
         if(player.input.jumpKeyPressed && player.canDoubleJump)
         {
@@ -44,12 +44,12 @@ public class PlayerJumpState : PlayerBaseState<Player>
         player.FlipPlayer();
     }
 
-    public void OnFixedExecute(Player player)
+    public void OnFixedExecute(PlayerMovement player)
     {
         player.MovePlayer();
     }
 
-    public void OnExit(Player player)
+    public void OnExit(PlayerMovement player)
     {
 
     }
