@@ -2,58 +2,64 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAirAttack2State : PlayerBaseState<PlayerMovement>
+public class PlayerAirAttack2State : PlayerBaseState<PlayerContext>
 {
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
+
     float previousGravityScale;
-    public void OnEnter(PlayerMovement player)
+    public void OnEnter(PlayerContext player)
     {
-        previousGravityScale = player.rb.gravityScale;
-        player.ChangeAnim("Air Attack 2");
-        player.StartCoroutine(WaitForAnimation(player));
-        player.rb.gravityScale = 0.25f;
-        player.rb.velocity = Vector2.zero;
+        this.playerMovement = player.playerMovement;
+        playerStateMachine = player.playerStateMachine;
+
+        previousGravityScale = playerMovement.rb.gravityScale;
+        playerMovement.ChangeAnim("Air Attack 2");
+        playerMovement.StartCoroutine(WaitForAnimation());
+        playerMovement.rb.gravityScale = 0.25f;
+        playerMovement.rb.velocity = Vector2.zero;
     }
 
-    public void OnExecute(PlayerMovement player)
-    {
-
-    }
-
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
 
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
-        player.rb.gravityScale = previousGravityScale;
+
     }
 
-    IEnumerator WaitForAnimation(PlayerMovement player)
+    public void OnExit(PlayerContext player)
+    {
+        playerMovement.rb.gravityScale = previousGravityScale;
+    }
+
+    IEnumerator WaitForAnimation()
     {
         //Particle
         PoolManager.Instance.poolAirAttack1.GetFromPool(
-            new Vector2(player.transform.position.x + 1f * player.transform.localScale.x, player.transform.position.y - 0.5f),
+            new Vector2(playerMovement.transform.position.x + 1f * playerMovement.transform.localScale.x, playerMovement.transform.position.y - 0.5f),
             Quaternion.identity,
-            player.transform.localScale);
+            playerMovement.transform.localScale);
 
         //Doi 1 frame sau do lay do dai cua animation dang chay
         yield return new WaitForEndOfFrame();
-        float animLength = player.animator.GetCurrentAnimatorStateInfo(1).length;
+        float animLength = playerMovement.animator.GetCurrentAnimatorStateInfo(1).length;
 
         float timer = 0f;
         while(timer < animLength)
         {
             timer += Time.deltaTime;
-            if (player.input.dashKeyPressed)
+            if (playerMovement.input.dashKeyPressed)
             {
-                player.ChangeState(player.dashState);
+                playerStateMachine.ChangeState(playerStateMachine.dashState);
                 yield break;
             }
             yield return null;
         }
         //Sau 10% animation: neu nhan phim attack thi se go next Combo
-        player.ChangeState(player.fallState);
+        playerStateMachine.ChangeState(playerStateMachine.fallState);
     }
 }
 

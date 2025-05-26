@@ -2,81 +2,89 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAttack3State : PlayerBaseState<PlayerMovement>
+public class PlayerAttack3State : PlayerBaseState<PlayerContext>
 {
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
+    private PlayerCombat playerCombat;
+    
     float previousMoveSpeed;
-    public void OnEnter(PlayerMovement player)
+    public void OnEnter(PlayerContext player)
     {
-        player.rb.velocity = Vector3.zero;
-        previousMoveSpeed = player.moveSpeed;
-        player.moveSpeed = player.moveSpeedWhenAttacking;
-        player.canStartCombo = false;
-        player.ChangeAnim("Attack 3");
-        player.StartCoroutine(WaitForAnimation(player));
+        this.playerMovement = player.playerMovement;
+        playerStateMachine = player.playerStateMachine;
+        playerCombat = player.playerCombat;
+
+        playerMovement.rb.velocity = Vector3.zero;
+        previousMoveSpeed = playerMovement.moveSpeed;
+        playerMovement.moveSpeed = playerMovement.moveSpeedWhenAttacking;
+        playerCombat.SetCanStartCombo(false);
+        playerMovement.ChangeAnim("Attack 3");
+        playerMovement.StartCoroutine(WaitForAnimation());
     }
 
-    public void OnExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
-        player.FlipPlayer();
+        playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
-        player.MovePlayer();
+        playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnExit(PlayerContext player)
     {
-        player.rb.velocity = Vector2.zero;
-        player.moveSpeed = previousMoveSpeed;
+        playerMovement.rb.velocity = Vector2.zero;
+        playerMovement.moveSpeed = previousMoveSpeed;
     }
 
-    IEnumerator WaitForAnimation(PlayerMovement player)
+    IEnumerator WaitForAnimation()
     {
         //Particle
         PoolManager.Instance.poolAttack3.GetFromPool(
-        new Vector2(player.transform.position.x + 1f * player.transform.localScale.x, player.transform.position.y),
+        new Vector2(playerMovement.transform.position.x + 1f * playerMovement.transform.localScale.x, playerMovement.transform.position.y),
                     Quaternion.identity,
-                    player.transform.localScale);
+                    playerMovement.transform.localScale);
 
         //Doi 1 frame sau do lay do dai cua animation dang chay
         yield return new WaitForEndOfFrame();
-        float animLength = player.animator.GetCurrentAnimatorStateInfo(1).length;
+        float animLength = playerMovement.animator.GetCurrentAnimatorStateInfo(1).length;
         float timer = 0f;
         //Sau animation: Chuyen sang state khac
         while(timer < animLength)
         {
             timer += Time.deltaTime;
-            if (player.input.jumpKeyPressed)
+            if (playerMovement.input.jumpKeyPressed)
             {
-                player.StartCoroutine(StartComboDelay(player));
-                player.ChangeState(player.jumpState);
+                playerMovement.StartCoroutine(StartComboDelay());
+                playerStateMachine.ChangeState(playerStateMachine.jumpState);
                 yield break;
             }
-            if (player.input.dashKeyPressed)
+            if (playerMovement.input.dashKeyPressed)
             {
-                player.StartCoroutine(StartComboDelay(player));
-                player.ChangeState(player.dashState);
+                playerMovement.StartCoroutine(StartComboDelay());
+                playerStateMachine.ChangeState(playerStateMachine.dashState);
                 yield break;
             }
             yield return null;
         }
 
         //Delay 1 khoang thoi gian moi duoc start Attack tiep
-        player.StartCoroutine(StartComboDelay(player));
+        playerMovement.StartCoroutine(StartComboDelay());
 
-        if (Mathf.Abs(player.input.horizontal) > 0.1f)
+        if (Mathf.Abs(playerMovement.input.horizontal) > 0.1f)
         {
-            player.ChangeState(player.runState);
+            playerStateMachine.ChangeState(playerStateMachine.runState);
             yield break;
         }
-        player.ChangeState(player.idleState);
+        playerStateMachine.ChangeState(playerStateMachine.idleState);
     }
 
-    IEnumerator StartComboDelay(PlayerMovement player)
+    IEnumerator StartComboDelay()
     {
-        yield return new WaitForSeconds(player.startComboCooldown);
-        player.canStartCombo = true;
+        yield return new WaitForSeconds(playerCombat.startComboCooldown);
+        playerCombat.SetCanStartCombo(true);
     }
 }
 

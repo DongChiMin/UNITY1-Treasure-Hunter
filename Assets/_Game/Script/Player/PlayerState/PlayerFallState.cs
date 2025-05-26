@@ -3,58 +3,67 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerFallState : PlayerBaseState<PlayerMovement>
+public class PlayerFallState : PlayerBaseState<PlayerContext>
 {
     LayerMask groundMask;
-    public void OnEnter(PlayerMovement player)
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
+    private PlayerItemPickup playerItemPickup;
+    private PlayerCombat playerCombat;
+    public void OnEnter(PlayerContext player)
     {
+        playerMovement = player.playerMovement;
+        playerStateMachine = player.playerStateMachine;
+        playerItemPickup = player.playerItemPickup;
+        playerCombat = player.playerCombat;
+
         groundMask = LayerMask.GetMask("Ground");
-        player.ChangeAnim("Fall");
+        playerMovement.ChangeAnim("Fall");
     }
 
-    public void OnExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
-        if(player.rb.velocity.y < player.maxFallSpeed)
+        if(playerMovement.rb.velocity.y < playerMovement.maxFallSpeed)
         {
-            player.rb.velocity = new Vector2(player.rb.velocity.x, player.maxFallSpeed);
+            playerMovement.rb.velocity = new Vector2(playerMovement.rb.velocity.x, playerMovement.maxFallSpeed);
         }
-        if (player.input.jumpKeyPressed && player.canDoubleJump)
+        if (playerMovement.input.jumpKeyPressed && playerMovement.canDoubleJump)
         {
-            player.ChangeState(player.doubleJumpState);
+            playerStateMachine.ChangeState(playerStateMachine.doubleJumpState);
             return;
         }
-        if (player.input.dashKeyPressed && player.canDash)
+        if (playerMovement.input.dashKeyPressed && playerMovement.canDash)
         {
-            player.ChangeState(player.dashState);
+            playerStateMachine.ChangeState(playerStateMachine.dashState);
             return;
         }
-        if (player.haveSword)
+        if (playerItemPickup.GetHaveSword())
         {
-            if (player.input.throwKeyPressed)
+            if (playerMovement.input.throwKeyPressed)
             {
-                player.ChangeState(player.throwSwordState);
+                playerStateMachine.ChangeState(playerStateMachine.throwSwordState);
                 return;
             }
-            if (player.input.attackKeyPressed && player.canStartAirCombo)
+            if (playerMovement.input.attackKeyPressed && playerCombat.GetCanStartAirCombo())
             {
-                player.ChangeState(player.airAttack1State);
+                playerStateMachine.ChangeState(playerStateMachine.airAttack1State);
             }
         }
         if (Physics2D.Raycast(player.transform.position + Vector3.down * 0.2f, Vector2.down, 0.2f, groundMask))
         {
-            player.ChangeState(player.groundState);
+            playerStateMachine.ChangeState(playerStateMachine.groundState);
             return;
         }
-        player.FlipPlayer();
+        playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
-        player.MovePlayer();
+        playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnExit(PlayerContext player)
     {
-        player.rb.velocity = Vector2.zero;
+        playerMovement.rb.velocity = Vector2.zero;
     }
 }

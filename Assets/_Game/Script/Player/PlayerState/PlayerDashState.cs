@@ -2,62 +2,67 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDashState : PlayerBaseState<PlayerMovement>
+public class PlayerDashState : PlayerBaseState<PlayerContext>
 {
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
     float previousGravityScale;
     float dashEndTime;
-    public void OnEnter(PlayerMovement player)
+    public void OnEnter(PlayerContext player)
     {
-        previousGravityScale = player.rb.gravityScale;
+        this.playerMovement = player.playerMovement;
+        this.playerStateMachine = player.playerStateMachine;
+
+        previousGravityScale = playerMovement.rb.gravityScale;
         dashEndTime = Time.time + 0.25f;
 
-        player.ChangeAnim("Fall");
+        playerMovement.ChangeAnim("Fall");
 
-        player.rb.velocity = Vector2.zero;
-        player.rb.gravityScale = 0f;
-        player.canDash = false;
-        player.DashPlayer();
-        player.StartCoroutine(GhostDashEffect(player));
+        playerMovement.rb.velocity = Vector2.zero;
+        playerMovement.rb.gravityScale = 0f;
+        playerMovement.canDash = false;
+        playerMovement.DashPlayer();
+        playerMovement.StartCoroutine(GhostDashEffect());
     }
 
-    public void OnExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
         if(Time.time >= dashEndTime)
         {
-            if (player.rb.velocity.y < -0.1f)
+            if (playerMovement.rb.velocity.y < -0.1f)
             {
-                player.ChangeState(player.fallState);
+                playerStateMachine.ChangeState(playerStateMachine.fallState);
                 return;
             }
-            player.ChangeState(player.runState);
+            playerStateMachine.ChangeState(playerStateMachine.runState);
         }
     }
 
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
 
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnExit(PlayerContext player)
     {
-        player.rb.gravityScale = previousGravityScale;
-        player.StartCoroutine(CanDashReset(player));
+        playerMovement.rb.gravityScale = previousGravityScale;
+        playerMovement.StartCoroutine(CanDashReset());
     }
 
-    IEnumerator CanDashReset(PlayerMovement player)
+    IEnumerator CanDashReset()
     {
-        yield return new WaitForSeconds(player.dashCooldown);
-        player.canDash = true;
+        yield return new WaitForSeconds(playerMovement.dashCooldown);
+        playerMovement.canDash = true;
     }
 
-    IEnumerator GhostDashEffect(PlayerMovement player)
+    IEnumerator GhostDashEffect()
     {
         int cnt = 1;
         while(cnt <= 5)
         {
             cnt++;
             yield return new WaitForSeconds(0.25f / 5);
-            PoolManager.Instance.poolGhost.GetFromPool(player.transform.position, Quaternion.identity, player.transform.localScale);
+            PoolManager.Instance.poolGhost.GetFromPool(playerMovement.transform.position, Quaternion.identity, playerMovement.transform.localScale);
         }
             
     }

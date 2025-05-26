@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
+    [Header("Debug")]
     public float horizontal;
     public bool jumpKeyPressed;
     public bool attackKeyPressed;

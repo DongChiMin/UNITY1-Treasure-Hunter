@@ -3,47 +3,54 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerAirAttack1State : PlayerBaseState<PlayerMovement>
+public class PlayerAirAttack1State : PlayerBaseState<PlayerContext>
 {
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
+    private PlayerCombat playerCombat;
     bool goNextCombo;
     float previousGravityScale;
-    public void OnEnter(PlayerMovement player)
+    public void OnEnter(PlayerContext player)
     {
-        player.canStartAirCombo = false;
+        this.playerMovement = player.playerMovement;
+        this.playerStateMachine = player.playerStateMachine;
+        this.playerCombat = player.playerCombat;
+
+        playerCombat.SetCanStartAirCombo(false);
         goNextCombo = false;
-        previousGravityScale = player.rb.gravityScale;
-        player.ChangeAnim("Air Attack 1");
-        player.StartCoroutine(WaitForAnimation(player));
-        player.rb.gravityScale = 0.25f;
-        player.rb.velocity = Vector2.zero;
+        previousGravityScale = playerMovement.rb.gravityScale;
+        playerMovement.ChangeAnim("Air Attack 1");
+        playerMovement.StartCoroutine(WaitForAnimation());
+        playerMovement.rb.gravityScale = 0.25f;
+        playerMovement.rb.velocity = Vector2.zero;
     }
 
-    public void OnExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
 
     }
 
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
 
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnExit(PlayerContext player)
     {
-        player.rb.gravityScale = previousGravityScale;
+        playerMovement.rb.gravityScale = previousGravityScale;
     }
 
-    IEnumerator WaitForAnimation(PlayerMovement player)
+    IEnumerator WaitForAnimation()
     {
         //Particle
         PoolManager.Instance.poolAirAttack1.GetFromPool(
-            new Vector2(player.transform.position.x + 1f * player.transform.localScale.x, player.transform.position.y - 0.5f),
+            new Vector2(playerMovement.transform.position.x + 1f * playerMovement.transform.localScale.x, playerMovement.transform.position.y - 0.5f),
             Quaternion.identity,
-            player.transform.localScale);
+            playerMovement.transform.localScale);
 
         //Doi 1 frame sau do lay do dai cua animation dang chay
         yield return new WaitForEndOfFrame();
-        float animLength = player.animator.GetCurrentAnimatorStateInfo(1).length;
+        float animLength = playerMovement.animator.GetCurrentAnimatorStateInfo(1).length;
         float timer = 0f;
 
         //Sau 10% animation: neu nhan phim attack thi se go next Combo
@@ -51,13 +58,13 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerMovement>
         while (timer < animLength * 0.9f)
         {
             timer += Time.deltaTime;
-            if (player.input.attackKeyPressed)
+            if (playerMovement.input.attackKeyPressed)
             {
                 goNextCombo = true;
             }
-            if (player.input.dashKeyPressed)
+            if (playerMovement.input.dashKeyPressed)
             {
-                player.ChangeState(player.dashState);
+                playerStateMachine.ChangeState(playerStateMachine.dashState);
                 yield break;
             }
             yield return null;
@@ -65,10 +72,10 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerMovement>
 
         if (goNextCombo)
         {
-            player.ChangeState(player.airAttack2State);
+            playerStateMachine.ChangeState(playerStateMachine.airAttack2State);
             yield break;
         }
-        player.ChangeState(player.fallState);
+        playerStateMachine.ChangeState(playerStateMachine.fallState);
     }
 }
 

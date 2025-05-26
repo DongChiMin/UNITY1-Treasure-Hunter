@@ -3,72 +3,82 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
-public class PlayerRunState : PlayerBaseState<PlayerMovement>
+public class PlayerRunState : PlayerBaseState<PlayerContext>
 {
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
+    private PlayerItemPickup playerItemPickup;
+    private PlayerCombat playerCombat;
+
     bool particleOn;
     Coroutine crt;
-    public void OnEnter(PlayerMovement player)
+    public void OnEnter(PlayerContext player)
     {
-        player.ChangeAnim("Run");
+        playerMovement = player.playerMovement;
+        playerStateMachine = player.playerStateMachine;
+        playerItemPickup = player.playerItemPickup;
+        playerCombat = player.playerCombat;
+
+        playerMovement.ChangeAnim("Run");
         particleOn = true;
     }
 
-    public void OnExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
-        float horizontal = player.input.horizontal;
+        float horizontal = playerMovement.input.horizontal;
 
-        if (player.input.jumpKeyPressed)
+        if (playerMovement.input.jumpKeyPressed)
         {
-            player.ChangeState(player.jumpState);
+            playerStateMachine.ChangeState(playerStateMachine.jumpState);
             return;
         }
-        if (player.input.dashKeyPressed && player.canDash)
+        if (playerMovement.input.dashKeyPressed && playerMovement.canDash)
         {
-            player.ChangeState(player.dashState);
+            playerStateMachine.ChangeState(playerStateMachine.dashState);
             return;
         }
-        if (player.haveSword)
+        if (playerItemPickup.GetHaveSword())
         {
-            if (player.input.throwKeyPressed)
+            if (playerMovement.input.throwKeyPressed)
             {
-                player.ChangeState(player.throwSwordState);
+                playerStateMachine.ChangeState(playerStateMachine.throwSwordState);
                 return;
             }
-            if (player.input.attackKeyPressed && player.canStartCombo)
+            if (playerMovement.input.attackKeyPressed && playerCombat.GetCanStartCombo())
             {
-                player.ChangeState(player.attack1State);
+                playerStateMachine.ChangeState(playerStateMachine.attack1State);
             }
         }
         if (Mathf.Abs(horizontal) < 0.1f)
         {
-            player.ChangeState(player.idleState);
+            playerStateMachine.ChangeState(playerStateMachine.idleState);
             return;
         }
-        if(player.rb.velocity.y < -0.1f)
+        if(playerMovement.rb.velocity.y < -0.1f)
         {
-            player.ChangeState(player.fallState);
+            playerStateMachine.ChangeState(playerStateMachine.fallState);
             return;
         }
-        player.FlipPlayer();
-        if (particleOn && Mathf.Abs(player.input.horizontal) > 0.5f)
+        playerMovement.FlipPlayer();
+        if (particleOn && Mathf.Abs(playerMovement.input.horizontal) > 0.5f)
         {
             particleOn = false;
-            crt = player.StartCoroutine(RunParticleDelay(player));
+            crt = playerMovement.StartCoroutine(RunParticleDelay());
         }
     }
 
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
-        player.MovePlayer();
+        playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnExit(PlayerContext player)
     {
-        player.rb.velocity = Vector2.zero;
-        if(crt != null) player.StopCoroutine(crt);
+        playerMovement.rb.velocity = Vector2.zero;
+        if(crt != null) playerMovement.StopCoroutine(crt);
     }
 
-    IEnumerator RunParticleDelay(PlayerMovement player)
+    IEnumerator RunParticleDelay()
     {
         float time = 0f;
 
@@ -76,17 +86,17 @@ public class PlayerRunState : PlayerBaseState<PlayerMovement>
         yield return new WaitForSeconds(time);
 
         PoolManager.Instance.poolRun.GetFromPool(
-        new Vector2(player.transform.position.x - 0.2f * player.transform.localScale.x, player.transform.position.y),
+        new Vector2(playerMovement.transform.position.x - 0.2f * playerMovement.transform.localScale.x, playerMovement.transform.position.y),
                     Quaternion.identity,
-                    player.transform.localScale);
+                    playerMovement.transform.localScale);
 
         time = Random.Range(0.2f, 0.3f);
         yield return new WaitForSeconds(time);
 
         PoolManager.Instance.poolRun.GetFromPool(
-        new Vector2(player.transform.position.x - 0.2f * player.transform.localScale.x, player.transform.position.y),
+        new Vector2(playerMovement.transform.position.x - 0.2f * playerMovement.transform.localScale.x, playerMovement.transform.position.y),
                     Quaternion.identity,
-                    player.transform.localScale);
+                    playerMovement.transform.localScale);
 
         particleOn = true;
 

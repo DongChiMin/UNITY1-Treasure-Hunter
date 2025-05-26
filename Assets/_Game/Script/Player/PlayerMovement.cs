@@ -5,21 +5,6 @@ using UnityEngine.Playables;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //--------------------Player States-------------------//
-    public PlayerIdleState idleState = new PlayerIdleState();
-    public PlayerRunState runState = new PlayerRunState();
-    public PlayerJumpState jumpState = new PlayerJumpState();
-    public PlayerFallState fallState = new PlayerFallState();
-    public PlayerGroundState groundState = new PlayerGroundState();
-    public PlayerDoubleJumpState doubleJumpState = new PlayerDoubleJumpState();
-    public PlayerHitState hitState = new PlayerHitState();
-    public PlayerThrowSwordState throwSwordState = new PlayerThrowSwordState();
-    public PlayerAttack1State attack1State = new PlayerAttack1State();
-    public PlayerAttack2State attack2State = new PlayerAttack2State();
-    public PlayerAttack3State attack3State = new PlayerAttack3State();
-    public PlayerAirAttack1State airAttack1State = new PlayerAirAttack1State();
-    public PlayerAirAttack2State airAttack2State = new PlayerAirAttack2State();
-    public PlayerDashState dashState = new PlayerDashState();
     //--------------------  -------------------//
     //Cac bien thay doi gia tri ngoai class: rb, canDoubleJump, input.horizontal, canStartCombo, canStartAirCombo
     [Header("Editable")]
@@ -28,18 +13,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public float dashForce;
     public float moveSpeed;
     public float moveSpeedWhenAttacking;
-    public float startComboCooldown;
     public float dashCooldown;
     public float lookDownDistance;
-
-    [Header("Public Variable")]
-    public bool canDoubleJump;
-    public bool canDash;
-    public bool canStartCombo;
-    public bool canStartAirCombo;
-    public bool haveSword;
-    public bool imortal;
-    public bool isLookDown;
 
     [Header("Drag Variable")]
     public Animator animator;
@@ -47,8 +22,12 @@ public class PlayerMovement : MonoBehaviour
     public PlayerInput input;
 
     private string currentAnim;
-    [Header("Debug")]
-    public PlayerBaseState<PlayerMovement> currentState;
+
+    [Header("Debug")] 
+    [SerializeField] private PlayerContext playerContext;
+    public bool canDoubleJump;
+    public bool canDash;
+    public bool isLookDown;
     void Start()
     {
         OnInit();    
@@ -56,20 +35,13 @@ public class PlayerMovement : MonoBehaviour
 
     void OnInit()
     {
-        imortal = false;
         canDash = true;
-        canStartCombo = true;
-        canStartAirCombo = true;
         canDoubleJump = true;
-        ChangeState(idleState);
+        isLookDown = false;
     }
 
     private void Update()
     {
-        if(currentState != null)
-        {
-            currentState.OnExecute(this);
-        }
         if(input.lookDownKeyPressed)
         {
             isLookDown = true;
@@ -77,14 +49,6 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             isLookDown = false;
-        }
-    }
-
-    private void FixedUpdate()
-    {
-        if (currentState != null)
-        {
-            currentState.OnFixedExecute(this);
         }
     }
 
@@ -121,47 +85,10 @@ public class PlayerMovement : MonoBehaviour
         //rb.velocity = new Vector2(dashForce * transform.localScale.x, 0f);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Sword Destroy" && !haveSword)
-        {
-            //Chuyển sang hình ảnh cầm kiếm
-            animator.SetLayerWeight(1, 1);
-            haveSword = true;
-            ChangeAnim(currentAnim);
-
-            //Xử lý item kiếm
-            Destroy(collision.gameObject);
-            
-        }
-        else if (collision.tag == "Sword No Destroy" & !haveSword)
-        {
-            //Chuyển sang hình ảnh cầm kiếm
-            animator.SetLayerWeight(1, 1);
-            haveSword = true;
-            ChangeAnim(currentAnim);
-        }
-        else if (collision.tag == "Water")
-        {
-            ChangeState(hitState);
-            rb.velocity = new Vector2(rb.velocity.x, 10.5f);
-        }
-    }
-
-    public void ChangeState(PlayerBaseState<PlayerMovement> newState)
-    {
-        if (currentState != null)
-        {
-            currentState.OnExit(this);
-        }
-        currentState = newState;
-        currentState.OnEnter(this);
-    }
-
     public void ChangeAnim(string anim)
     {
         string newAnim = anim;
-        if(haveSword)
+        if(playerContext.playerItemPickup.GetHaveSword())
         {
             newAnim = anim + " Sword";
         }
@@ -171,5 +98,10 @@ public class PlayerMovement : MonoBehaviour
         }
         animator.Play(newAnim);
         currentAnim = newAnim;
+    }
+
+    public void ResetAnim()
+    {
+        animator.Play(currentAnim);
     }
 }

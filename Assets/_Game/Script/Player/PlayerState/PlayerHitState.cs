@@ -2,47 +2,54 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerHitState : PlayerBaseState<PlayerMovement>
+public class PlayerHitState : PlayerBaseState<PlayerContext>
 {
-    public void OnEnter(PlayerMovement player)
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
+    private PlayerCombat playerCombat;
+    public void OnEnter(PlayerContext player)
     {
-        player.imortal = true;
-        player.ChangeAnim("Hit");
-        player.StartCoroutine(WaitForAnimation(player));
+        playerMovement = player.playerMovement;
+        playerStateMachine = player.playerStateMachine;
+        playerCombat = player.playerCombat;
+
+        playerCombat.SetImortal(true);
+        playerMovement.ChangeAnim("Hit");
+        player.StartCoroutine(WaitForAnimation());
     }
 
-    public void OnExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
-        player.FlipPlayer();
+        playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
-        player.MovePlayer();
+        playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnExit(PlayerContext player)
     {
 
     }
 
-    IEnumerator WaitForAnimation(PlayerMovement player)
+    IEnumerator WaitForAnimation()
     {
         yield return new WaitForEndOfFrame();
-        yield return new WaitForSeconds(player.animator.GetCurrentAnimatorStateInfo(1).length);
-        player.imortal = false;
-        if(player.rb.velocity.y < -0.1f)
+        yield return new WaitForSeconds(playerMovement.animator.GetCurrentAnimatorStateInfo(1).length);
+        playerCombat.SetImortal(false);
+        if(playerMovement.rb.velocity.y < -0.1f)
         {
-            player.ChangeState(player.fallState);
+            playerStateMachine.ChangeState(playerStateMachine.fallState);
             yield break;
         }
-        if(Mathf.Abs(player.rb.velocity.x) > 0.1f)
+        if(Mathf.Abs(playerMovement.rb.velocity.x) > 0.1f)
         {
-            player.ChangeState(player.runState);
+            playerStateMachine.ChangeState(playerStateMachine.runState);
             yield break;
         }
 
-        player.ChangeState(player.idleState);
+        playerStateMachine.ChangeState(playerStateMachine.idleState);
 
     }
 }

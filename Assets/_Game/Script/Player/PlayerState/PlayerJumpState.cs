@@ -3,53 +3,63 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerJumpState : PlayerBaseState<PlayerMovement>
+public class PlayerJumpState : PlayerBaseState<PlayerContext>
 {
-    public void OnEnter(PlayerMovement player)
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
+    private PlayerItemPickup playerItemPickup;
+    private PlayerCombat playerCombat;
+
+    public void OnEnter(PlayerContext player)
     {
+        playerItemPickup = player.playerItemPickup;
+        playerMovement = player.playerMovement;
+        playerStateMachine = player.playerStateMachine;
+        playerCombat = player.playerCombat;
+
         PoolManager.Instance.poolJump.GetFromPool(player.transform.position + Vector3.down*0.05f, Quaternion.identity, player.transform.localScale);
-        player.ChangeAnim("Jump");
-        player.JumpPlayer();
+        playerMovement.ChangeAnim("Jump");
+        playerMovement.JumpPlayer();
     }
 
-    public void OnExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
-        if(player.input.jumpKeyPressed && player.canDoubleJump)
+        if(this.playerMovement.input.jumpKeyPressed && this.playerMovement.canDoubleJump)
         {
-            player.ChangeState(player.doubleJumpState);
+            this.playerStateMachine.ChangeState(this.playerStateMachine.doubleJumpState);
             return;
         }
-        if (player.input.dashKeyPressed && player.canDash)
+        if (playerMovement.input.dashKeyPressed && playerMovement.canDash)
         {
-            player.ChangeState(player.dashState);
+            playerStateMachine.ChangeState(playerStateMachine.dashState);
             return;
         }
-        if (player.haveSword)
+        if (playerItemPickup.GetHaveSword())
         {
-            if (player.input.throwKeyPressed)
+            if (playerMovement.input.throwKeyPressed)
             {
-                player.ChangeState(player.throwSwordState);
+                playerStateMachine.ChangeState(playerStateMachine.throwSwordState);
                 return;
             }
-            if(player.input.attackKeyPressed && player.canStartAirCombo)
+            if(playerMovement.input.attackKeyPressed && playerCombat.GetCanStartAirCombo())
             {
-                player.ChangeState(player.airAttack1State);
+                playerStateMachine.ChangeState(playerStateMachine.airAttack1State);
             }
         }
-        if (player.rb.velocity.y < -0.1f)
+        if (playerMovement.rb.velocity.y < -0.1f)
         {
-            player.ChangeState(player.fallState);
+            playerStateMachine.ChangeState(playerStateMachine.fallState);
             return;
         }
-        player.FlipPlayer();
+        playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
-        player.MovePlayer();
+        playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnExit(PlayerContext player)
     {
 
     }

@@ -3,48 +3,55 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
 
-public class PlayerAttack1State : PlayerBaseState<PlayerMovement>
+public class PlayerAttack1State : PlayerBaseState<PlayerContext>
 {
+    private PlayerMovement playerMovement;
+    private PlayerStateMachine playerStateMachine;
+    private PlayerCombat playerCombat;
     bool goNextCombo;
     float previousMoveSpeed;
-    public void OnEnter(PlayerMovement player)
+    public void OnEnter(PlayerContext player)
     {
-        player.rb.velocity = Vector3.zero;
-        previousMoveSpeed = player.moveSpeed;
-        player.moveSpeed = player.moveSpeedWhenAttacking;
-        player.canStartCombo = false;
+        playerMovement = player.playerMovement;
+        playerStateMachine = player.playerStateMachine;
+        playerCombat = player.playerCombat;
+
+        playerMovement.rb.velocity = Vector3.zero;
+        previousMoveSpeed = playerMovement.moveSpeed;
+        playerMovement.moveSpeed = playerMovement.moveSpeedWhenAttacking;
+        playerCombat.SetCanStartCombo(false);
         goNextCombo = false;
-        player.ChangeAnim("Attack 1");
-        player.StartCoroutine(WaitForAnimation(player));
+        playerMovement.ChangeAnim("Attack 1");
+        playerMovement.StartCoroutine(WaitForAnimation());
     }
 
-    public void OnExecute(PlayerMovement player)
+    public void OnExecute(PlayerContext player)
     {
-        player.FlipPlayer();
+        playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerMovement player)
+    public void OnFixedExecute(PlayerContext player)
     {
-        player.MovePlayer();
+        playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerMovement player)
+    public void OnExit(PlayerContext player)
     {
-        player.rb.velocity = Vector2.zero;
-        player.moveSpeed = previousMoveSpeed;
+        playerMovement.rb.velocity = Vector2.zero;
+        playerMovement.moveSpeed = previousMoveSpeed;
     }
 
-    IEnumerator WaitForAnimation(PlayerMovement player)
+    IEnumerator WaitForAnimation()
     {
         //Particle
         PoolManager.Instance.poolAttack1.GetFromPool(
-        new Vector2(player.transform.position.x + 1f * player.transform.localScale.x, player.transform.position.y),
+        new Vector2(playerMovement.transform.position.x + 1f * playerMovement.transform.localScale.x, playerMovement.transform.position.y),
                     Quaternion.identity,
-                    player.transform.localScale);
+                    playerMovement.transform.localScale);
 
         //Doi 1 frame sau do lay do dai cua animation dang chay
         yield return new WaitForEndOfFrame();
-        float animLength = player.animator.GetCurrentAnimatorStateInfo(1).length;
+        float animLength = playerMovement.animator.GetCurrentAnimatorStateInfo(1).length;
         float timer = 0f;
         
         //Sau 5% animation: neu nhan phim attack thi se go next Combo
@@ -52,20 +59,20 @@ public class PlayerAttack1State : PlayerBaseState<PlayerMovement>
         while (timer < animLength*0.95f)
         {
             timer += Time.deltaTime;
-            if(player.input.attackKeyPressed)
+            if(playerMovement.input.attackKeyPressed)
             {
                 goNextCombo = true;
             }
-            if(player.input.jumpKeyPressed)
+            if(playerMovement.input.jumpKeyPressed)
             {
-                player.StartCoroutine(StartComboDelay(player));
-                player.ChangeState(player.jumpState);
+                playerMovement.StartCoroutine(StartComboDelay(playerMovement));
+                playerStateMachine.ChangeState(playerStateMachine.jumpState);
                 yield break;
             }
-            if(player.input.dashKeyPressed)
+            if(playerMovement.input.dashKeyPressed)
             {
-                player.StartCoroutine(StartComboDelay(player));
-                player.ChangeState(player.dashState);
+                playerMovement.StartCoroutine(StartComboDelay(playerMovement));
+                playerStateMachine.ChangeState(playerStateMachine.dashState);
                 yield break;
             }
             yield return null;
@@ -73,24 +80,24 @@ public class PlayerAttack1State : PlayerBaseState<PlayerMovement>
         //Nếu đã nhấn atttack: Chuyển sang attack2
         if (goNextCombo)
         {
-            player.ChangeState(player.attack2State);
+            playerStateMachine.ChangeState(playerStateMachine.attack2State);
             yield break;
         }
         //Delay 1 khoang thoi gian moi duoc start Attack tiep
-        player.StartCoroutine(StartComboDelay(player));
+        playerMovement.StartCoroutine(StartComboDelay(playerMovement));
 
-        if (Mathf.Abs(player.input.horizontal) > 0.1f)
+        if (Mathf.Abs(playerMovement.input.horizontal) > 0.1f)
         {
-            player.ChangeState(player.runState);
+            playerStateMachine.ChangeState(playerStateMachine.runState);
             yield break;
         }
-        player.ChangeState(player.idleState);
+        playerStateMachine.ChangeState(playerStateMachine.idleState);
 
     }
 
     IEnumerator StartComboDelay(PlayerMovement player)
     {
-        yield return new WaitForSeconds(player.startComboCooldown);
-        player.canStartCombo = true;
+        yield return new WaitForSeconds(playerCombat.startComboCooldown);
+        playerCombat.SetCanStartCombo(true);
     }
 }
