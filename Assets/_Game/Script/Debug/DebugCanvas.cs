@@ -11,7 +11,7 @@ public class DebugCanvas : MonoBehaviour
 
     private void Update()
     {
-        string ans = player.currentState.ToString();
+        string ans = player.GetCurrentState().ToString();
         currentState.text = ans.Substring(6);
     }
 }

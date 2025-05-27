@@ -5,21 +5,22 @@ using static UnityEditorInternal.VersionControl.ListControl;
 
 public class PlayerCombat : MonoBehaviour
 {
-    [SerializeField] Transform attackPoint;
-    [SerializeField] PlayerMovement player;
-    PlayerBaseState<PlayerContext> previousState;
-    LayerMask enemyLayer;
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private PlayerMovement player;
 
     [Header("Stats")]
-    [SerializeField] public float startComboCooldown;
-    [SerializeField] int attackDamage;
-    private bool canStartCombo;
-    private bool canStartAirCombo;
-    private bool imortal;
-    [SerializeField] float hitForce;
+    [SerializeField] private float startComboCooldown;
+    [SerializeField] private int attackDamage;
+    [SerializeField] private float hitForce;
 
     [Header("Debug")]
-    [SerializeField] PlayerContext playerContext;
+    [SerializeField] private PlayerContext playerContext;
+    [SerializeField] private bool canStartCombo;
+    [SerializeField] private bool canStartAirCombo;
+    [SerializeField] private bool imortal;
+
+    private PlayerBaseState<PlayerContext> previousState;
+    private LayerMask enemyLayer;
     private PlayerMovement playerMovement;
     private PlayerStateMachine playerStateMachine;
 
@@ -44,9 +45,9 @@ public class PlayerCombat : MonoBehaviour
     void LateUpdate()
     {
         //Phát hiện enemy trong tầm đánh bằng OverlapBox, chỉ chạy 1 lần mỗi khi đổi state
-        if(playerStateMachine.currentState != previousState)
+        if(playerStateMachine.GetCurrentState() != previousState)
         {
-            previousState = playerStateMachine.currentState;
+            previousState = playerStateMachine.GetCurrentState();
             Collider2D[] hitEnemies = new Collider2D[0];
 
             //Attack va AirAttack co AttackBox khac nhau
@@ -113,5 +114,10 @@ public class PlayerCombat : MonoBehaviour
     public void SetImortal(bool newBool)
     {
         imortal = newBool;
+    }
+
+    public float GetStartComboCooldown()
+    {
+        return startComboCooldown;
     }
 }

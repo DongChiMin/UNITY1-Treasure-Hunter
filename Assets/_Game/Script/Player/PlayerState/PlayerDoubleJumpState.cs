@@ -9,6 +9,7 @@ public class PlayerDoubleJumpState : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerItemPickup playerItemPickup;
     private PlayerCombat playerCombat;
+    private PlayerInput input;
 
     public void OnEnter(PlayerContext player)
     {
@@ -16,6 +17,7 @@ public class PlayerDoubleJumpState : PlayerBaseState<PlayerContext>
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
+        input = player.playerInput;
 
         PoolManager.Instance.poolJump.GetFromPool(player.transform.position + Vector3.down * 0.05f, Quaternion.identity, player.transform.localScale);
         playerMovement.ChangeAnim("Jump");
@@ -25,19 +27,19 @@ public class PlayerDoubleJumpState : PlayerBaseState<PlayerContext>
 
     public void OnExecute(PlayerContext player)
     {
-        if (playerMovement.input.dashKeyPressed && playerMovement.canDash)
+        if (input.dashKeyPressed && playerMovement.canDash)
         {
             playerStateMachine.ChangeState(playerStateMachine.dashState);
             return;
         }
         if (playerItemPickup.GetHaveSword())
         {
-            if (playerMovement.input.throwKeyPressed)
+            if (input.throwKeyPressed)
             {
                 playerStateMachine.ChangeState(playerStateMachine.throwSwordState);
                 return;
             }
-            if (playerMovement.input.attackKeyPressed && playerCombat.GetCanStartAirCombo())
+            if (input.attackKeyPressed && playerCombat.GetCanStartAirCombo())
             {
                 playerStateMachine.ChangeState(playerStateMachine.airAttack1State);
             }

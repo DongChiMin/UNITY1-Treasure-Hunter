@@ -6,29 +6,32 @@ using UnityEngine.Playables;
 public class PlayerMovement : MonoBehaviour
 {
     //--------------------  -------------------//
-    //Cac bien thay doi gia tri ngoai class: rb, canDoubleJump, input.horizontal, canStartCombo, canStartAirCombo
+    //Các biến private chỉ có getter. biến public sẵn getter và setter
     [Header("Editable")]
     [SerializeField] private float jumpForce;
-    public float maxFallSpeed;
-    [SerializeField] public float dashForce;
+    [SerializeField] private float maxFallSpeed;
+    [SerializeField] private float dashForce;
+    [SerializeField] private float moveSpeedWhenAttacking;
+    [SerializeField] private float dashCooldown;
+    [SerializeField] private float lookDownDistance;
     public float moveSpeed;
-    public float moveSpeedWhenAttacking;
-    public float dashCooldown;
-    public float lookDownDistance;
 
     [Header("Drag Variable")]
     public Animator animator;
     public Rigidbody2D rb;
-    public PlayerInput input;
-
-    private string currentAnim;
 
     [Header("Debug")] 
     [SerializeField] private PlayerContext playerContext;
+    [SerializeField] private PlayerInput input;
     public bool canDoubleJump;
     public bool canDash;
+
+    private string currentAnim;
+
     void Start()
     {
+        playerContext = GetComponent<PlayerContext>();
+        input = playerContext.playerInput;
         OnInit();    
     }
 
@@ -36,18 +39,6 @@ public class PlayerMovement : MonoBehaviour
     {
         canDash = true;
         canDoubleJump = true;
-    }
-
-    private void Update()
-    {
-        if(input.lookDownKeyPressed)
-        {
-            CameraManager.Instance.LookDownCamera(lookDownDistance);
-        }
-        else
-        {
-            CameraManager.Instance.LookNormalCamera();
-        }
     }
 
     public void FlipPlayer()
@@ -101,5 +92,22 @@ public class PlayerMovement : MonoBehaviour
     public void ResetAnim()
     {
         animator.Play(currentAnim);
+    }
+
+    public float GetLookDownDistance()
+    {
+        return lookDownDistance;
+    }
+    public float GetDashCooldown()
+    {
+        return dashCooldown;
+    }
+    public float GetMoveSpeedWhenAttacking()
+    {
+        return moveSpeedWhenAttacking;
+    }
+    public float GetMaxFallSpeed()
+    {
+        return maxFallSpeed;
     }
 }

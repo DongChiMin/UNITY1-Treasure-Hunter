@@ -9,6 +9,7 @@ public class PlayerRunState : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerItemPickup playerItemPickup;
     private PlayerCombat playerCombat;
+    private PlayerInput input;
 
     bool particleOn;
     Coroutine crt;
@@ -18,6 +19,7 @@ public class PlayerRunState : PlayerBaseState<PlayerContext>
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
+        input = player.playerInput;
 
         playerMovement.ChangeAnim("Run");
         particleOn = true;
@@ -25,26 +27,26 @@ public class PlayerRunState : PlayerBaseState<PlayerContext>
 
     public void OnExecute(PlayerContext player)
     {
-        float horizontal = playerMovement.input.horizontal;
+        float horizontal = input.horizontal;
 
-        if (playerMovement.input.jumpKeyPressed)
+        if (input.jumpKeyPressed)
         {
             playerStateMachine.ChangeState(playerStateMachine.jumpState);
             return;
         }
-        if (playerMovement.input.dashKeyPressed && playerMovement.canDash)
+        if (input.dashKeyPressed && playerMovement.canDash)
         {
             playerStateMachine.ChangeState(playerStateMachine.dashState);
             return;
         }
         if (playerItemPickup.GetHaveSword())
         {
-            if (playerMovement.input.throwKeyPressed)
+            if (input.throwKeyPressed)
             {
                 playerStateMachine.ChangeState(playerStateMachine.throwSwordState);
                 return;
             }
-            if (playerMovement.input.attackKeyPressed && playerCombat.GetCanStartCombo())
+            if (input.attackKeyPressed && playerCombat.GetCanStartCombo())
             {
                 playerStateMachine.ChangeState(playerStateMachine.attack1State);
             }
@@ -60,7 +62,7 @@ public class PlayerRunState : PlayerBaseState<PlayerContext>
             return;
         }
         playerMovement.FlipPlayer();
-        if (particleOn && Mathf.Abs(playerMovement.input.horizontal) > 0.5f)
+        if (particleOn && Mathf.Abs(input.horizontal) > 0.5f)
         {
             particleOn = false;
             crt = playerMovement.StartCoroutine(RunParticleDelay());

@@ -8,15 +8,5 @@ public class PlayerContext : MonoBehaviour
     public PlayerItemPickup playerItemPickup;
     public PlayerStateMachine playerStateMachine;
     public PlayerCombat playerCombat;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public PlayerInput playerInput;
 }

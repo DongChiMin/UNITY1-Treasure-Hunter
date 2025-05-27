@@ -21,8 +21,8 @@ public class PlayerStateMachine : MonoBehaviour
     public PlayerDashState dashState = new PlayerDashState();
 
     [Header("Debug")]
-    [SerializeField] PlayerContext playerContext;
-    public PlayerBaseState<PlayerContext> currentState;
+    [SerializeField] private PlayerContext playerContext;
+    [SerializeField] private PlayerBaseState<PlayerContext> currentState;
 
     private void Start()
     {
@@ -59,5 +59,10 @@ public class PlayerStateMachine : MonoBehaviour
         }
         currentState = newState;
         currentState.OnEnter(playerContext);
+    }
+
+    public PlayerBaseState<PlayerContext> GetCurrentState()
+    {
+        return currentState;
     }
 }

@@ -8,6 +8,7 @@ public class PlayerGroundState : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerItemPickup playerItemPickup;
     private PlayerCombat playerCombat;
+    private PlayerInput input;
 
     bool canParticle = true;
     Coroutine crt;
@@ -17,6 +18,7 @@ public class PlayerGroundState : PlayerBaseState<PlayerContext>
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
+        input = player.playerInput;
 
         if (canParticle)
         {
@@ -47,7 +49,7 @@ public class PlayerGroundState : PlayerBaseState<PlayerContext>
 
     IEnumerator WaitForAnimation()
     {
-        if (Mathf.Abs(playerMovement.input.horizontal) > 0.1f)
+        if (Mathf.Abs(input.horizontal) > 0.1f)
         {
             playerStateMachine.ChangeState(playerStateMachine.runState);
             yield break;
@@ -69,12 +71,12 @@ public class PlayerGroundState : PlayerBaseState<PlayerContext>
         while(timer < animLength)
         {
             timer+= Time.deltaTime;
-            if(Mathf.Abs(playerMovement.input.horizontal) > 0.1f)
+            if(Mathf.Abs(input.horizontal) > 0.1f)
             {
                 playerStateMachine.ChangeState(playerStateMachine.runState);
                 yield break;
             }
-            if(playerMovement.input.jumpKeyPressed)
+            if(input.jumpKeyPressed)
             {
                 playerStateMachine.ChangeState(playerStateMachine.jumpState);
                 yield break;

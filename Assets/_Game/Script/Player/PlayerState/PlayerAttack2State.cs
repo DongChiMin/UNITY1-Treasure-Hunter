@@ -7,6 +7,7 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
     private PlayerMovement playerMovement;
     private PlayerStateMachine playerStateMachine;
     private PlayerCombat playerCombat;
+    private PlayerInput input;
 
     bool goNextCombo;
     float previousMoveSpeed;
@@ -15,10 +16,11 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
         this.playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerCombat = player.playerCombat;
+        input = player.playerInput;
 
         playerMovement.rb.velocity = Vector3.zero;
         previousMoveSpeed = playerMovement.moveSpeed;
-        playerMovement.moveSpeed = playerMovement.moveSpeedWhenAttacking;
+        playerMovement.moveSpeed = playerMovement.GetMoveSpeedWhenAttacking();
         playerCombat.SetCanStartCombo(false);
         goNextCombo = false;
         playerMovement.ChangeAnim("Attack 2");
@@ -59,17 +61,17 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
         while (timer < animLength * 0.95f)
         {
             timer += Time.deltaTime;
-            if (playerMovement.input.attackKeyPressed)
+            if (input.attackKeyPressed)
             {
                 goNextCombo = true;
             }
-            if (playerMovement.input.jumpKeyPressed)
+            if (input.jumpKeyPressed)
             {
                 playerMovement.StartCoroutine(StartComboDelay());
                 playerStateMachine.ChangeState(playerStateMachine.jumpState);
                 yield break;
             }
-            if (playerMovement.input.dashKeyPressed)
+            if (input.dashKeyPressed)
             {
                 playerMovement.StartCoroutine(StartComboDelay());
                 playerStateMachine.ChangeState(playerStateMachine.dashState);
@@ -88,7 +90,7 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
         //Delay 1 khoang thoi gian moi duoc start Attack tiep
         playerMovement.StartCoroutine(StartComboDelay());
 
-        if (Mathf.Abs(playerMovement.input.horizontal) > 0.1f)
+        if (Mathf.Abs(input.horizontal) > 0.1f)
         {
             playerStateMachine.ChangeState(playerStateMachine.runState);
             yield break;
@@ -99,7 +101,7 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
 
     IEnumerator StartComboDelay()
     {
-        yield return new WaitForSeconds(playerCombat.startComboCooldown);
+        yield return new WaitForSeconds(playerCombat.GetStartComboCooldown());
         playerCombat.SetCanStartCombo(true);
     }
 }

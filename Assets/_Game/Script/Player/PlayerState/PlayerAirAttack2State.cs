@@ -6,12 +6,14 @@ public class PlayerAirAttack2State : PlayerBaseState<PlayerContext>
 {
     private PlayerMovement playerMovement;
     private PlayerStateMachine playerStateMachine;
+    private PlayerInput input;
 
     float previousGravityScale;
     public void OnEnter(PlayerContext player)
     {
         this.playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
+        input = player.playerInput;
 
         previousGravityScale = playerMovement.rb.gravityScale;
         playerMovement.ChangeAnim("Air Attack 2");
@@ -51,7 +53,7 @@ public class PlayerAirAttack2State : PlayerBaseState<PlayerContext>
         while(timer < animLength)
         {
             timer += Time.deltaTime;
-            if (playerMovement.input.dashKeyPressed)
+            if (input.dashKeyPressed)
             {
                 playerStateMachine.ChangeState(playerStateMachine.dashState);
                 yield break;

@@ -8,6 +8,7 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerContext>
     private PlayerMovement playerMovement;
     private PlayerStateMachine playerStateMachine;
     private PlayerCombat playerCombat;
+    private PlayerInput input;
     bool goNextCombo;
     float previousGravityScale;
     public void OnEnter(PlayerContext player)
@@ -15,6 +16,7 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerContext>
         this.playerMovement = player.playerMovement;
         this.playerStateMachine = player.playerStateMachine;
         this.playerCombat = player.playerCombat;
+        this.input = player.playerInput;
 
         playerCombat.SetCanStartAirCombo(false);
         goNextCombo = false;
@@ -58,11 +60,11 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerContext>
         while (timer < animLength * 0.9f)
         {
             timer += Time.deltaTime;
-            if (playerMovement.input.attackKeyPressed)
+            if (input.attackKeyPressed)
             {
                 goNextCombo = true;
             }
-            if (playerMovement.input.dashKeyPressed)
+            if (input.dashKeyPressed)
             {
                 playerStateMachine.ChangeState(playerStateMachine.dashState);
                 yield break;

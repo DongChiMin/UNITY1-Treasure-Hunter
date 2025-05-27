@@ -10,12 +10,14 @@ public class PlayerFallState : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerItemPickup playerItemPickup;
     private PlayerCombat playerCombat;
+    private PlayerInput input;
     public void OnEnter(PlayerContext player)
     {
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
+        input = player.playerInput;
 
         groundMask = LayerMask.GetMask("Ground");
         playerMovement.ChangeAnim("Fall");
@@ -23,28 +25,28 @@ public class PlayerFallState : PlayerBaseState<PlayerContext>
 
     public void OnExecute(PlayerContext player)
     {
-        if(playerMovement.rb.velocity.y < playerMovement.maxFallSpeed)
+        if(playerMovement.rb.velocity.y < playerMovement.GetMaxFallSpeed())
         {
-            playerMovement.rb.velocity = new Vector2(playerMovement.rb.velocity.x, playerMovement.maxFallSpeed);
+            playerMovement.rb.velocity = new Vector2(playerMovement.rb.velocity.x, playerMovement.GetMaxFallSpeed());
         }
-        if (playerMovement.input.jumpKeyPressed && playerMovement.canDoubleJump)
+        if (input.jumpKeyPressed && playerMovement.canDoubleJump)
         {
             playerStateMachine.ChangeState(playerStateMachine.doubleJumpState);
             return;
         }
-        if (playerMovement.input.dashKeyPressed && playerMovement.canDash)
+        if (input.dashKeyPressed && playerMovement.canDash)
         {
             playerStateMachine.ChangeState(playerStateMachine.dashState);
             return;
         }
         if (playerItemPickup.GetHaveSword())
         {
-            if (playerMovement.input.throwKeyPressed)
+            if (input.throwKeyPressed)
             {
                 playerStateMachine.ChangeState(playerStateMachine.throwSwordState);
                 return;
             }
-            if (playerMovement.input.attackKeyPressed && playerCombat.GetCanStartAirCombo())
+            if (input.attackKeyPressed && playerCombat.GetCanStartAirCombo())
             {
                 playerStateMachine.ChangeState(playerStateMachine.airAttack1State);
             }

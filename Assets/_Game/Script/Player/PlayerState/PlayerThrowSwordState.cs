@@ -9,6 +9,7 @@ public class PlayerThrowSwordState : PlayerBaseState<PlayerContext>
     private PlayerMovement playerMovement;
     private PlayerStateMachine playerStateMachine;
     private PlayerItemPickup playerItemPickup;
+    private PlayerInput input;
 
     float previousGravityScale; 
 
@@ -17,6 +18,7 @@ public class PlayerThrowSwordState : PlayerBaseState<PlayerContext>
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
+        input = player.playerInput;
 
         previousGravityScale = playerMovement.rb.gravityScale;
         playerMovement.rb.gravityScale = 0.25f;
@@ -69,13 +71,13 @@ public class PlayerThrowSwordState : PlayerBaseState<PlayerContext>
         {
             playerMovement.canDoubleJump = true;
         }
-        if (Mathf.Abs(playerMovement.input.horizontal) > 0.1f)
+        if (Mathf.Abs(input.horizontal) > 0.1f)
         {
 
             playerStateMachine.ChangeState(playerStateMachine.runState);
             yield break;
         }
-        if (playerMovement.input.jumpKeyPressed)
+        if (input.jumpKeyPressed)
         {
             playerStateMachine.ChangeState(playerStateMachine.jumpState);
             yield break;

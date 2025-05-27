@@ -51,7 +51,7 @@ public class PlayerDashState : PlayerBaseState<PlayerContext>
 
     IEnumerator CanDashReset()
     {
-        yield return new WaitForSeconds(playerMovement.dashCooldown);
+        yield return new WaitForSeconds(playerMovement.GetDashCooldown());
         playerMovement.canDash = true;
     }
 

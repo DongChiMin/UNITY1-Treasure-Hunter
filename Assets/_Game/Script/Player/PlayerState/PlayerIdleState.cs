@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerIdleState : PlayerBaseState<PlayerContext>
@@ -8,40 +6,51 @@ public class PlayerIdleState : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerItemPickup playerItemPickup;
     private PlayerCombat playerCombat;
+    private PlayerInput input;
     public void OnEnter(PlayerContext player)
     {
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
+        input = player.playerInput;
 
         playerMovement.ChangeAnim("Idle");
     }
 
     public void OnExecute(PlayerContext player)
     {
-        if(Mathf.Abs(playerMovement.input.horizontal) > 0.1f)
+        //Nhin xuong neu nguoi choi nhan phim s
+        if (input.lookDownKeyPressed)
+        {
+            CameraManager.Instance.LookDownCamera(playerMovement.GetLookDownDistance());
+        }
+        else
+        {
+            CameraManager.Instance.LookNormalCamera();
+        }
+        if (Mathf.Abs(input.horizontal) > 0.1f)
         {
             playerStateMachine.ChangeState(playerStateMachine.runState);
             return;
         }
-        if(playerMovement.input.jumpKeyPressed)
+        if(input.jumpKeyPressed)
         {
             playerStateMachine.ChangeState(playerStateMachine.jumpState);
             return;
         }
-        if(playerMovement.input.dashKeyPressed && playerMovement.canDash)
+        if(input.dashKeyPressed && playerMovement.canDash)
         {
             playerStateMachine.ChangeState(playerStateMachine.dashState);
             return;
         }
         if (playerItemPickup.GetHaveSword())
         {
-            if (playerMovement.input.throwKeyPressed)
+            if (input.throwKeyPressed)
             {
                 playerStateMachine.ChangeState(playerStateMachine.throwSwordState);
             }
-            if(playerMovement.input.attackKeyPressed && playerCombat.GetCanStartCombo())
+            if(input.attackKeyPressed && playerCombat.GetCanStartCombo())
             {
                 playerStateMachine.ChangeState(playerStateMachine.attack1State);
             }

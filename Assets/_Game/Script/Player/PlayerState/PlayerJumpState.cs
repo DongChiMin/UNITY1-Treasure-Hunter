@@ -9,6 +9,7 @@ public class PlayerJumpState : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerItemPickup playerItemPickup;
     private PlayerCombat playerCombat;
+    private PlayerInput input;
 
     public void OnEnter(PlayerContext player)
     {
@@ -16,6 +17,7 @@ public class PlayerJumpState : PlayerBaseState<PlayerContext>
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerCombat = player.playerCombat;
+        input = player.playerInput;
 
         PoolManager.Instance.poolJump.GetFromPool(player.transform.position + Vector3.down*0.05f, Quaternion.identity, player.transform.localScale);
         playerMovement.ChangeAnim("Jump");
@@ -24,24 +26,24 @@ public class PlayerJumpState : PlayerBaseState<PlayerContext>
 
     public void OnExecute(PlayerContext player)
     {
-        if(this.playerMovement.input.jumpKeyPressed && this.playerMovement.canDoubleJump)
+        if(input.jumpKeyPressed && this.playerMovement.canDoubleJump)
         {
             this.playerStateMachine.ChangeState(this.playerStateMachine.doubleJumpState);
             return;
         }
-        if (playerMovement.input.dashKeyPressed && playerMovement.canDash)
+        if (input.dashKeyPressed && playerMovement.canDash)
         {
             playerStateMachine.ChangeState(playerStateMachine.dashState);
             return;
         }
         if (playerItemPickup.GetHaveSword())
         {
-            if (playerMovement.input.throwKeyPressed)
+            if (input.throwKeyPressed)
             {
                 playerStateMachine.ChangeState(playerStateMachine.throwSwordState);
                 return;
             }
-            if(playerMovement.input.attackKeyPressed && playerCombat.GetCanStartAirCombo())
+            if(input.attackKeyPressed && playerCombat.GetCanStartAirCombo())
             {
                 playerStateMachine.ChangeState(playerStateMachine.airAttack1State);
             }
