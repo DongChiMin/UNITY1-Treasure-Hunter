@@ -7,28 +7,33 @@ public class PlayerHitState : PlayerBaseState<PlayerContext>
     private PlayerMovement playerMovement;
     private PlayerStateMachine playerStateMachine;
     private PlayerCombat playerCombat;
-    public void OnEnter(PlayerContext player)
+    private PlayerContext playerContext;
+
+    public void OnInit(PlayerContext player)
     {
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerCombat = player.playerCombat;
-
+        playerContext = player;
+    }
+    public void OnEnter()
+    {
         playerCombat.SetImortal(true);
         playerMovement.ChangeAnim("Hit");
-        player.StartCoroutine(WaitForAnimation());
+        playerContext.StartCoroutine(WaitForAnimation());
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
         playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
         playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
 
     }

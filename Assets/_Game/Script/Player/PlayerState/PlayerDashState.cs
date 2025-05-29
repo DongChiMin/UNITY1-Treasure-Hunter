@@ -8,11 +8,14 @@ public class PlayerDashState : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     float previousGravityScale;
     float dashEndTime;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
         this.playerMovement = player.playerMovement;
         this.playerStateMachine = player.playerStateMachine;
-
+    }
+    public void OnEnter()
+    {
         previousGravityScale = playerMovement.rb.gravityScale;
         dashEndTime = Time.time + 0.25f;
 
@@ -25,7 +28,7 @@ public class PlayerDashState : PlayerBaseState<PlayerContext>
         playerMovement.StartCoroutine(GhostDashEffect());
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
         if(Time.time >= dashEndTime)
         {
@@ -38,12 +41,12 @@ public class PlayerDashState : PlayerBaseState<PlayerContext>
         }
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
 
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
         playerMovement.rb.gravityScale = previousGravityScale;
         playerMovement.StartCoroutine(CanDashReset());

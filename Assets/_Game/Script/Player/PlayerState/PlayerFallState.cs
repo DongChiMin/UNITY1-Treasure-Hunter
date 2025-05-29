@@ -11,19 +11,22 @@ public class PlayerFallState : PlayerBaseState<PlayerContext>
     private PlayerItemPickup playerItemPickup;
     private PlayerCombat playerCombat;
     private PlayerInput input;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
         input = player.playerInput;
-
+    }
+    public void OnEnter()
+    {
         groundMask = LayerMask.GetMask("Ground");
         playerMovement.ChangeAnim("Fall");
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
         if(playerMovement.rb.velocity.y < playerMovement.GetMaxFallSpeed())
         {
@@ -51,7 +54,7 @@ public class PlayerFallState : PlayerBaseState<PlayerContext>
                 playerStateMachine.ChangeState(playerStateMachine.airAttack1State);
             }
         }
-        if (Physics2D.Raycast(player.transform.position + Vector3.down * 0.2f, Vector2.down, 0.2f, groundMask))
+        if (Physics2D.Raycast(playerMovement.transform.position + Vector3.down * 0.2f, Vector2.down, 0.2f, groundMask))
         {
             playerStateMachine.ChangeState(playerStateMachine.groundState);
             return;
@@ -59,12 +62,12 @@ public class PlayerFallState : PlayerBaseState<PlayerContext>
         playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
         playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
         playerMovement.rb.velocity = Vector2.zero;
     }

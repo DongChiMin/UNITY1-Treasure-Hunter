@@ -4,9 +4,10 @@ using UnityEngine;
 
 public interface PlayerBaseState<Player>
 {
-    public void OnEnter(Player player);
-    public void OnExecute(Player player);
-    public void OnFixedExecute(Player player);
-    public void OnExit(Player player);
+    public void OnInit(Player player);
+    public void OnEnter();
+    public void OnExecute();
+    public void OnFixedExecute();
+    public void OnExit();
 
 }

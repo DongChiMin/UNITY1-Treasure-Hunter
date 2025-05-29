@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,34 +7,47 @@ public class PlayerAirAttack2State : PlayerBaseState<PlayerContext>
     private PlayerMovement playerMovement;
     private PlayerStateMachine playerStateMachine;
     private PlayerInput input;
+    private DamageDealer playerDamageDealer;
 
     float previousGravityScale;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
+        //Gán các component
         this.playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         input = player.playerInput;
-
-        previousGravityScale = playerMovement.rb.gravityScale;
+        playerDamageDealer = player.playerDamageDealer;
+    }
+    public void OnEnter()
+    {
+        //Set các giá trị component 
         playerMovement.ChangeAnim("Air Attack 2");
         playerMovement.StartCoroutine(WaitForAnimation());
-        playerMovement.rb.gravityScale = 0.25f;
         playerMovement.rb.velocity = Vector2.zero;
+
+        playerDamageDealer.SetAttackBox(true, AttackType.PlayerAirAttack);
+
+        //Set giá trị các biến
+        previousGravityScale = playerMovement.rb.gravityScale;
+        playerMovement.rb.gravityScale = 0.25f;
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
 
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
 
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
         playerMovement.rb.gravityScale = previousGravityScale;
+
+        playerDamageDealer.SetAttackBox(false, AttackType.PlayerAirAttack);
     }
 
     IEnumerator WaitForAnimation()

@@ -19,8 +19,6 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField] private bool canStartAirCombo;
     [SerializeField] private bool imortal;
 
-    private PlayerBaseState<PlayerContext> previousState;
-    private LayerMask enemyLayer;
     private PlayerMovement playerMovement;
     private PlayerStateMachine playerStateMachine;
 
@@ -30,13 +28,11 @@ public class PlayerCombat : MonoBehaviour
         playerMovement = playerContext.playerMovement;
         playerStateMachine = playerContext.playerStateMachine;
 
-        enemyLayer = LayerMask.GetMask("Crates");
         OnInit();
     }
 
     void OnInit()
     {
-        previousState = playerStateMachine.idleState;
         canStartCombo = true;
         canStartAirCombo = true;
         imortal = false;
@@ -44,28 +40,28 @@ public class PlayerCombat : MonoBehaviour
 
     void LateUpdate()
     {
-        //Phát hiện enemy trong tầm đánh bằng OverlapBox, chỉ chạy 1 lần mỗi khi đổi state
-        if(playerStateMachine.GetCurrentState() != previousState)
-        {
-            previousState = playerStateMachine.GetCurrentState();
-            Collider2D[] hitEnemies = new Collider2D[0];
+        ////Phát hiện enemy trong tầm đánh bằng OverlapBox, chỉ chạy 1 lần mỗi khi đổi state
+        //if(playerStateMachine.GetCurrentState() != previousState)
+        //{
+        //    previousState = playerStateMachine.GetCurrentState();
+        //    Collider2D[] hitEnemies = new Collider2D[0];
 
-            //Attack va AirAttack co AttackBox khac nhau
-            if (previousState == playerStateMachine.attack1State || previousState == playerStateMachine.attack2State || previousState == playerStateMachine.attack3State)
-            {
-                hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, new Vector2(1.5f, 0.8f), 0f, enemyLayer);
-            }
-            else if(previousState == playerStateMachine.airAttack1State || previousState == playerStateMachine.airAttack2State)
-            {
-                hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position + Vector3.down * 0.5f, new Vector2(1.65f, 0.8f), 0f, enemyLayer);
-            }
+        //    //Attack va AirAttack co AttackBox khac nhau
+        //    if (previousState == playerStateMachine.attack1State || previousState == playerStateMachine.attack2State || previousState == playerStateMachine.attack3State)
+        //    {
+        //        hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position, new Vector2(1.5f, 0.8f), 0f, enemyLayer);
+        //    }
+        //    else if(previousState == playerStateMachine.airAttack1State || previousState == playerStateMachine.airAttack2State)
+        //    {
+        //        hitEnemies = Physics2D.OverlapBoxAll(attackPoint.position + Vector3.down * 0.5f, new Vector2(1.65f, 0.8f), 0f, enemyLayer);
+        //    }
 
-            //Duyet enemy
-            foreach (Collider2D enemy in hitEnemies)
-            {
-                enemy.GetComponent<BaseEnemy>().TakeDamage(attackDamage, player.transform.localScale.x);
-            }
-        }
+        //    //Duyet enemy
+        //    foreach (Collider2D enemy in hitEnemies)
+        //    {
+        //        enemy.GetComponent<BaseEnemy>().TakeDamage(attackDamage, player.transform.localScale.x);
+        //    }
+        //}
  
     }
 

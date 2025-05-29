@@ -65,18 +65,15 @@ public class SwordThrow : MonoBehaviour
         {
             Embedded(transform.position - Vector3.right * 0.25f * transform.localScale.x);
         }
-        if(collision.tag == "Player")
+        if (collision.tag == "Player")
         {
             isFlying = false;
 
             rb.isKinematic = false;
             PoolManager.Instance.poolSwordThrowPool.AddToPool(gameObject);
         }
-        if(collision.tag == "Enemy")
+        if (collision.tag == "Enemy")
         {
-            BaseEnemy enemy = collision.GetComponent<BaseEnemy>();
-            enemy.TakeDamage(attackDamage, transform.localScale.x);
-
             //Thành sword item và trả game object về pool 
             PoolManager.Instance.poolSwordItem.GetFromPool(
                 transform.position + Vector3.down * 0.35f,
@@ -84,8 +81,6 @@ public class SwordThrow : MonoBehaviour
                 transform.localScale
             );
             gameObject.SetActive(false);
-
-
         }
     }
 

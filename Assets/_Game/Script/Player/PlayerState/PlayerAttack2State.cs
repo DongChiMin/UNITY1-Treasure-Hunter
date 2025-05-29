@@ -8,39 +8,54 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerCombat playerCombat;
     private PlayerInput input;
+    private DamageDealer playerDamageDealer;
 
     bool goNextCombo;
     float previousMoveSpeed;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
+        //Gán các component
         this.playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerCombat = player.playerCombat;
         input = player.playerInput;
-
-        playerMovement.rb.velocity = Vector3.zero;
-        previousMoveSpeed = playerMovement.moveSpeed;
-        playerMovement.moveSpeed = playerMovement.GetMoveSpeedWhenAttacking();
-        playerCombat.SetCanStartCombo(false);
-        goNextCombo = false;
-        playerMovement.ChangeAnim("Attack 2");
-        playerMovement.StartCoroutine(WaitForAnimation());
+        playerDamageDealer = player.playerDamageDealer;
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnEnter()
+    {
+        //Set các giá trị của component
+        playerMovement.rb.velocity = Vector3.zero;
+        playerMovement.ChangeAnim("Attack 2");
+        playerMovement.StartCoroutine(WaitForAnimation());
+
+        playerCombat.SetCanStartCombo(false);
+
+        playerDamageDealer.SetAttackBox(true, AttackType.PlayerAttack);
+
+        //Set giá trị các biến
+        previousMoveSpeed = playerMovement.moveSpeed;
+        goNextCombo = false;
+        playerMovement.moveSpeed = playerMovement.GetMoveSpeedWhenAttacking();
+    }
+
+    public void OnExecute()
     {
         playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
         playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
         playerMovement.rb.velocity = Vector2.zero;
         playerMovement.moveSpeed = previousMoveSpeed;
+
+        playerDamageDealer.SetAttackBox(false, AttackType.PlayerAttack);
     }
 
     IEnumerator WaitForAnimation()

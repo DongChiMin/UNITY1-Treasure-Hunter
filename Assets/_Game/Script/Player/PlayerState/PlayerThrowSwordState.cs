@@ -13,29 +13,32 @@ public class PlayerThrowSwordState : PlayerBaseState<PlayerContext>
 
     float previousGravityScale; 
 
-    public void OnEnter(PlayerContext player)
+    public void OnInit(PlayerContext player)
     {
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         input = player.playerInput;
+    }
 
+    public void OnEnter()
+    {
         previousGravityScale = playerMovement.rb.gravityScale;
         playerMovement.rb.gravityScale = 0.25f;
         playerMovement.rb.velocity = Vector2.zero;
         playerMovement.ChangeAnim("Throw");
-        player.StartCoroutine(WaitForAnimation());
+        playerMovement.StartCoroutine(WaitForAnimation());
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
         playerMovement.rb.velocity = Vector2.zero;
         playerMovement.rb.gravityScale = previousGravityScale;

@@ -275,7 +275,8 @@ GameObject:
   - component: {fileID: 8337443606257547404}
   - component: {fileID: 6579642977114575569}
   - component: {fileID: 597799137214629880}
-  - component: {fileID: 4858708888836145947}
+  - component: {fileID: 3071696149795014551}
+  - component: {fileID: 4146192730772437968}
   m_Layer: 18
   m_Name: Barrel
   m_TagString: Enemy
@@ -365,7 +366,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4858708888836145947
+--- !u!114 &3071696149795014551
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -374,11 +375,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2438675531560202783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95817e49d530d8841b1a81bb23ecb13f, type: 3}
+  m_Script: {fileID: 11500000, guid: 9825a3a853b42f54cb238c24fadf6c55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 15
-  knockbackForce: 1
   piecesForce: 1.75
   disableDelay: 0.3
   fallingDelay: 2
@@ -392,6 +391,54 @@ MonoBehaviour:
   - {fileID: 3117825528591376844}
   - {fileID: 489973052811052645}
   - {fileID: 5551035917172404571}
+--- !u!114 &4146192730772437968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2438675531560202783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f650cf8595bd4e3458f61eb0f56d57fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 15
+  minKnockX: 1
+  maxKnockX: 2
+  minKnockY: 4
+  maxKnockY: 6
+  onDie:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3071696149795014551}
+        m_TargetAssemblyTypeName: Barrel, Assembly-CSharp
+        m_MethodName: Death
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onHealthReduced:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3071696149795014551}
+        m_TargetAssemblyTypeName: Barrel, Assembly-CSharp
+        m_MethodName: GetHit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  currentHP: 0
 --- !u!1 &5281570990467180450
 GameObject:
   m_ObjectHideFlags: 0

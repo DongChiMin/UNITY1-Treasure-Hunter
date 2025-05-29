@@ -9,4 +9,5 @@ public class PlayerContext : MonoBehaviour
     public PlayerStateMachine playerStateMachine;
     public PlayerCombat playerCombat;
     public PlayerInput playerInput;
+    public DamageDealer playerDamageDealer;
 }

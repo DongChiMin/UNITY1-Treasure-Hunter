@@ -27,6 +27,21 @@ public class PlayerStateMachine : MonoBehaviour
     private void Start()
     {
         playerContext = GetComponent<PlayerContext>();
+        idleState.OnInit(playerContext);
+        runState.OnInit(playerContext);
+        jumpState.OnInit(playerContext);
+        fallState.OnInit(playerContext);
+        groundState.OnInit(playerContext);
+        doubleJumpState.OnInit(playerContext);
+        hitState.OnInit(playerContext);
+        throwSwordState.OnInit(playerContext);
+        attack1State.OnInit(playerContext);
+        attack2State.OnInit(playerContext);
+        attack3State.OnInit(playerContext);
+        airAttack1State.OnInit(playerContext);
+        airAttack2State.OnInit(playerContext);
+        dashState.OnInit(playerContext);
+
         OnInit();
     }
 
@@ -39,7 +54,7 @@ public class PlayerStateMachine : MonoBehaviour
     {
         if (currentState != null)
         {
-            currentState.OnExecute(playerContext);
+            currentState.OnExecute();
         }
     }
 
@@ -47,7 +62,7 @@ public class PlayerStateMachine : MonoBehaviour
     {
         if (currentState != null)
         {
-            currentState.OnFixedExecute(playerContext);
+            currentState.OnFixedExecute();
         }
     }
 
@@ -55,10 +70,10 @@ public class PlayerStateMachine : MonoBehaviour
     {
         if (currentState != null)
         {
-            currentState.OnExit(playerContext);
+            currentState.OnExit();
         }
         currentState = newState;
-        currentState.OnEnter(playerContext);
+        currentState.OnEnter();
     }
 
     public PlayerBaseState<PlayerContext> GetCurrentState()

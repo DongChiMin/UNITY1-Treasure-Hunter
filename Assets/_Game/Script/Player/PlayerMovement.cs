@@ -89,9 +89,9 @@ public class PlayerMovement : MonoBehaviour
         currentAnim = newAnim;
     }
 
-    public void ResetAnim()
+    public void ResetSwordAnim()
     {
-        animator.Play(currentAnim);
+        ChangeAnim(currentAnim);
     }
 
     public float GetLookDownDistance()

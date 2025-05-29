@@ -11,20 +11,23 @@ public class PlayerJumpState : PlayerBaseState<PlayerContext>
     private PlayerCombat playerCombat;
     private PlayerInput input;
 
-    public void OnEnter(PlayerContext player)
+    public void OnInit(PlayerContext player)
     {
         playerItemPickup = player.playerItemPickup;
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerCombat = player.playerCombat;
         input = player.playerInput;
+    }
 
-        PoolManager.Instance.poolJump.GetFromPool(player.transform.position + Vector3.down*0.05f, Quaternion.identity, player.transform.localScale);
+    public void OnEnter()
+    {
+        PoolManager.Instance.poolJump.GetFromPool(playerMovement.transform.position + Vector3.down*0.05f, Quaternion.identity, playerMovement.transform.localScale);
         playerMovement.ChangeAnim("Jump");
         playerMovement.JumpPlayer();
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
         if(input.jumpKeyPressed && this.playerMovement.canDoubleJump)
         {
@@ -56,12 +59,12 @@ public class PlayerJumpState : PlayerBaseState<PlayerContext>
         playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
         playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
 
     }

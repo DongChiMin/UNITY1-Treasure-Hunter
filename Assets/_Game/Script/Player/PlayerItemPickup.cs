@@ -21,7 +21,7 @@ public class PlayerItemPickup : MonoBehaviour
             //Chuyển sang hình ảnh cầm kiếm
             playerContext.playerMovement.animator.SetLayerWeight(1, 1);
             haveSword = true;
-            playerContext.playerMovement.ResetAnim();
+            playerContext.playerMovement.ResetSwordAnim();
 
             //Xử lý item kiếm
             Destroy(collision.gameObject);
@@ -32,7 +32,7 @@ public class PlayerItemPickup : MonoBehaviour
             //Chuyển sang hình ảnh cầm kiếm
             playerContext.playerMovement.animator.SetLayerWeight(1, 1);
             haveSword = true;
-            playerContext.playerMovement.ResetAnim();
+            playerContext.playerMovement.ResetSwordAnim();
         }
     }
 

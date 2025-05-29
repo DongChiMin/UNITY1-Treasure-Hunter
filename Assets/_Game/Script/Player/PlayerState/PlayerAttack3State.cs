@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,37 +8,51 @@ public class PlayerAttack3State : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerCombat playerCombat;
     private PlayerInput input;
+    private DamageDealer playerDamageDealer;
 
     float previousMoveSpeed;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
+        //Gán các component của player
         this.playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerCombat = player.playerCombat;
         input = player.playerInput;
-
+        playerDamageDealer = player.playerDamageDealer;
+    }
+    public void OnEnter()
+    {
+        //set giá trị các components
         playerMovement.rb.velocity = Vector3.zero;
-        previousMoveSpeed = playerMovement.moveSpeed;
-        playerMovement.moveSpeed = playerMovement.GetMoveSpeedWhenAttacking();
-        playerCombat.SetCanStartCombo(false);
         playerMovement.ChangeAnim("Attack 3");
         playerMovement.StartCoroutine(WaitForAnimation());
+
+        playerCombat.SetCanStartCombo(false);
+
+        playerDamageDealer.SetAttackBox(true, AttackType.PlayerAttack);
+
+        //Set giá trị các biến
+        previousMoveSpeed = playerMovement.moveSpeed;
+        playerMovement.moveSpeed = playerMovement.GetMoveSpeedWhenAttacking();
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
         playerMovement.FlipPlayer();
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
         playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
         playerMovement.rb.velocity = Vector2.zero;
         playerMovement.moveSpeed = previousMoveSpeed;
+
+        playerDamageDealer.SetAttackBox(false, AttackType.PlayerAttack);
     }
 
     IEnumerator WaitForAnimation()

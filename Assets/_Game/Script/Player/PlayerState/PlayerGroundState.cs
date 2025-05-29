@@ -12,39 +12,42 @@ public class PlayerGroundState : PlayerBaseState<PlayerContext>
 
     bool canParticle = true;
     Coroutine crt;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
         input = player.playerInput;
-
+    }
+    public void OnEnter()
+    {
         if (canParticle)
         {
             canParticle = false;
-            PoolManager.Instance.poolGround.GetFromPool(player.transform.position + Vector3.down * 0.05f, Quaternion.identity, player.transform.localScale);
-            player.StartCoroutine(particleDelay());
+            PoolManager.Instance.poolGround.GetFromPool(playerMovement.transform.position + Vector3.down * 0.05f, Quaternion.identity, playerMovement.transform.localScale);
+            playerMovement.StartCoroutine(particleDelay());
         }
         playerMovement.canDoubleJump = true;
         playerCombat.SetCanStartAirCombo(true);
-        crt = player.StartCoroutine(WaitForAnimation());
+        crt = playerMovement.StartCoroutine(WaitForAnimation());
 
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
 
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
 
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
-        if (crt != null) player.StopCoroutine(crt);
+        if (crt != null) playerMovement.StopCoroutine(crt);
     }
 
     IEnumerator WaitForAnimation()

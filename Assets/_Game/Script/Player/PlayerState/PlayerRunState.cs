@@ -13,19 +13,22 @@ public class PlayerRunState : PlayerBaseState<PlayerContext>
 
     bool particleOn;
     Coroutine crt;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
         input = player.playerInput;
-
+    }
+    public void OnEnter()
+    {
         playerMovement.ChangeAnim("Run");
         particleOn = true;
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
         float horizontal = input.horizontal;
 
@@ -69,12 +72,12 @@ public class PlayerRunState : PlayerBaseState<PlayerContext>
         }
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
         playerMovement.MovePlayer();
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
         playerMovement.rb.velocity = Vector2.zero;
         if(crt != null) playerMovement.StopCoroutine(crt);

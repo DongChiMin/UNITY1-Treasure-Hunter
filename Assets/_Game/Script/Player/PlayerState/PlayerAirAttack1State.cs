@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
@@ -9,37 +9,52 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerCombat playerCombat;
     private PlayerInput input;
+    private DamageDealer playerDamageDealer;
+
     bool goNextCombo;
     float previousGravityScale;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
+        //Gán các component
         this.playerMovement = player.playerMovement;
         this.playerStateMachine = player.playerStateMachine;
         this.playerCombat = player.playerCombat;
         this.input = player.playerInput;
-
-        playerCombat.SetCanStartAirCombo(false);
-        goNextCombo = false;
-        previousGravityScale = playerMovement.rb.gravityScale;
+        this.playerDamageDealer = player.playerDamageDealer;
+    }
+    public void OnEnter()
+    {
+        //Set giá trị các component
         playerMovement.ChangeAnim("Air Attack 1");
         playerMovement.StartCoroutine(WaitForAnimation());
-        playerMovement.rb.gravityScale = 0.25f;
         playerMovement.rb.velocity = Vector2.zero;
+
+        playerDamageDealer.SetAttackBox(true, AttackType.PlayerAirAttack);
+
+        playerCombat.SetCanStartAirCombo(false);
+
+        //Set giá trị các biến 
+        goNextCombo = false;
+        previousGravityScale = playerMovement.rb.gravityScale;
+        playerMovement.rb.gravityScale = 0.25f;
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
 
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
 
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
         playerMovement.rb.gravityScale = previousGravityScale;
+
+        playerDamageDealer.SetAttackBox(false, AttackType.PlayerAirAttack);
     }
 
     IEnumerator WaitForAnimation()

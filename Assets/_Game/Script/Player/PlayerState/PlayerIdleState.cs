@@ -7,18 +7,21 @@ public class PlayerIdleState : PlayerBaseState<PlayerContext>
     private PlayerItemPickup playerItemPickup;
     private PlayerCombat playerCombat;
     private PlayerInput input;
-    public void OnEnter(PlayerContext player)
+
+    public void OnInit(PlayerContext player)
     {
         playerMovement = player.playerMovement;
         playerStateMachine = player.playerStateMachine;
         playerItemPickup = player.playerItemPickup;
         playerCombat = player.playerCombat;
         input = player.playerInput;
-
+    }
+    public void OnEnter()
+    {
         playerMovement.ChangeAnim("Idle");
     }
 
-    public void OnExecute(PlayerContext player)
+    public void OnExecute()
     {
         //Nhin xuong neu nguoi choi nhan phim s
         if (input.lookDownKeyPressed)
@@ -57,12 +60,12 @@ public class PlayerIdleState : PlayerBaseState<PlayerContext>
         }
     }
 
-    public void OnFixedExecute(PlayerContext player)
+    public void OnFixedExecute()
     {
 
     }
 
-    public void OnExit(PlayerContext player)
+    public void OnExit()
     {
 
     }
