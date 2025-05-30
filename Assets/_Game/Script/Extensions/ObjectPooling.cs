@@ -37,7 +37,6 @@ public class ObjectPooling : MonoBehaviour
         {
             obj = Instantiate (prefab, transform);
             obj.gameObject.SetActive(false);
-            poolQueue.Enqueue(obj);
         }
         
         //thiet lap vi tri

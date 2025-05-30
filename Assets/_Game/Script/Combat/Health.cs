@@ -61,7 +61,7 @@ public class Health : MonoBehaviour, IDamageable
             return;
         }
         transform.rotation = Quaternion.identity;
-        rb.velocity = Vector3.zero;
+        rb.velocity = Vector2.zero;
         float directionX = (damageData.knockbackDirectionRight == true ? 1 : -1) * Random.Range(minKnockX, maxKnockX) * damageData.knockbackForce;
         float directionY = Random.Range(minKnockY, maxKnockY) * damageData.knockbackForce;
 

@@ -10,5 +10,6 @@ using UnityEngine;
         PlayerThrowAttack,
         CrabbyAttack,
         TouchAttack,
+        EnemyBullet
     }
 

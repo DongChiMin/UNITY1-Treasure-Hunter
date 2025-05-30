@@ -7,10 +7,12 @@ public class CannonStateMachine : MonoBehaviour
     public CannonIdleState idleState = new CannonIdleState();
     public CannonFireState fireState = new CannonFireState();
     public CannonHitState hitState = new CannonHitState();
+    public CannonDieState dieState = new CannonDieState();
 
     private EnemyBaseState<CannonContext> currentState;
     private CannonContext cannonContext;
 
+    private bool isDied = false;
     private void Start()
     {
         cannonContext = GetComponent<CannonContext>();
@@ -18,6 +20,7 @@ public class CannonStateMachine : MonoBehaviour
         idleState.OnInit(cannonContext);
         fireState.OnInit(cannonContext);
         hitState.OnInit(cannonContext);
+        dieState.OnInit(cannonContext);
         OnInit();
     }
 
@@ -56,5 +59,16 @@ public class CannonStateMachine : MonoBehaviour
     public void ChangeToHitState()
     {
         ChangeState(hitState);
+    }
+
+    public void ChangeToDieState()
+    {
+        isDied = true;
+        ChangeState(dieState);
+    }
+
+    public bool GetIsDied()
+    {
+        return isDied;
     }
 }

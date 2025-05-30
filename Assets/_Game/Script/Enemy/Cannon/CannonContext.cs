@@ -8,4 +8,5 @@ public class CannonContext : MonoBehaviour
     public CannonStateMachine cannonStateMachine;
     public CannonAttack cannonAttack;
     public CannonAnimationController cannonAnimationController;
+    public FragmentsEffect fragmentsEffect;
 }

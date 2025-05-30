@@ -25,12 +25,12 @@ public class PlayerHitState : PlayerBaseState<PlayerContext>
 
     public void OnExecute()
     {
-        playerMovement.FlipPlayer();
+        //playerMovement.FlipPlayer();
     }
 
     public void OnFixedExecute()
     {
-        playerMovement.MovePlayer();
+        //playerMovement.MovePlayer();
     }
 
     public void OnExit()

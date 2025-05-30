@@ -16,4 +16,6 @@ public class PoolManager : Singleton<PoolManager>
     public ObjectPooling poolSwordThrowPool;
     public ObjectPooling poolSwordEmbeddedParticlePool;
     public ObjectPooling poolSwordItem;
+    public ObjectPooling poolCannonBall;
+    public ObjectPooling poolCannonFireEffect;
 }

@@ -42,9 +42,11 @@ public class CannonHitState : EnemyBaseState<CannonContext>
         //Sau 5% animation: neu nhan phim attack thi se go next Combo
         yield return new WaitForSeconds(animLength);
 
-        //Khi đã chạy hết animation
-
-        cannonStateMachine.ChangeState(cannonStateMachine.idleState);
+        //Khi đã chạy hết animation và canon chưa hết máu 
+        if (!cannonStateMachine.GetIsDied())
+        {
+            cannonStateMachine.ChangeState(cannonStateMachine.idleState);
+        }
 
     }
 }

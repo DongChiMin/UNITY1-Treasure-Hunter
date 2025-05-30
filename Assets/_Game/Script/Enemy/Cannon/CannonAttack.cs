@@ -16,8 +16,11 @@ public class CannonAttack : MonoBehaviour
         canStartAttack=false;
         StartCoroutine(Cooldown(attackCooldown));
 
-        //Xử lý attack
-        Debug.Log("Cannon Attack");
+        //Xử lý attack : Gọi từ pool viên đạn và effect
+        EnemyBullet bullet = PoolManager.Instance.poolCannonBall.GetFromPool(transform.position, Quaternion.identity, Vector3.one).GetComponent<EnemyBullet>();
+        bullet.SetDirection((int) Mathf.Sign(transform.localScale.x) * -1);
+
+        PoolManager.Instance.poolCannonFireEffect.GetFromPool(transform.position + new Vector3(transform.localScale.x * 0.7f * -1, 0, 0), Quaternion.identity, transform.localScale);
     }
 
     IEnumerator Cooldown(float attackCooldown)

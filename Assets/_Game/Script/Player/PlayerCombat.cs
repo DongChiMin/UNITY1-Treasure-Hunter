@@ -78,7 +78,7 @@ public class PlayerCombat : MonoBehaviour
             playerStateMachine.ChangeState(playerStateMachine.hitState);
 
             playerMovement.rb.velocity = Vector2.zero;
-            playerMovement.rb.AddForce(Vector2.up * hitForce, ForceMode2D.Impulse);
+            playerMovement.rb.AddForce(Vector2.up * hitForce + Vector2.right * transform.localScale.x * hitForce * 0.3f, ForceMode2D.Impulse);
         }
     }
 

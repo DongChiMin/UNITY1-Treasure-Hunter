@@ -41,14 +41,23 @@ public class CannonFireState : EnemyBaseState<CannonContext>
     {
         //Doi 1 frame sau do lay do dai cua animation dang chay
         yield return new WaitForEndOfFrame();
-        float animLength = cannonAnimationController.animator.GetCurrentAnimatorStateInfo(0).length; ;
+        float animLength = cannonAnimationController.animator.GetCurrentAnimatorStateInfo(0).length;
+        float timer = 0f;
 
-        //Sau 5% animation: neu nhan phim attack thi se go next Combo
-        yield return new WaitForSeconds(animLength);
-
-        //Khi đã chạy hết animation
+        //Sau khi chạy 70% animation mới bắt đầu bắn đạn;
+        while(timer < animLength * 0.7)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+        }
         cannonAttack.Attack();
-        cannonStateMachine.ChangeState(cannonStateMachine.idleState);
+
+        //Sau 30% animation còn lại: nếu chưa hết máu thì Chuyển về Idle State
+        yield return new WaitForSeconds(animLength * 0.3f);
+        if(!cannonStateMachine.GetIsDied())
+        {
+            cannonStateMachine.ChangeState(cannonStateMachine.idleState);
+        }
         
     }
 }
