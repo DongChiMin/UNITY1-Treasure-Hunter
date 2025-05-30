@@ -9,5 +9,6 @@ using UnityEngine;
         PlayerAirAttack,
         PlayerThrowAttack,
         CrabbyAttack,
+        TouchAttack,
     }
 

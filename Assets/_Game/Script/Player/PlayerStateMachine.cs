@@ -76,6 +76,11 @@ public class PlayerStateMachine : MonoBehaviour
         currentState.OnEnter();
     }
 
+    public void ChangeToHitState()
+    {
+        ChangeState(hitState);
+    }
+
     public PlayerBaseState<PlayerContext> GetCurrentState()
     {
         return currentState;
