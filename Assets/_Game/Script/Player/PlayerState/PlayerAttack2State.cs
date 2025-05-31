@@ -12,6 +12,7 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
 
     bool goNextCombo;
     float previousMoveSpeed;
+    private Coroutine crt;
 
     public void OnInit(PlayerContext player)
     {
@@ -28,7 +29,7 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
         //Set các giá trị của component
         playerMovement.rb.velocity = Vector3.zero;
         playerMovement.ChangeAnim("Attack 2");
-        playerMovement.StartCoroutine(WaitForAnimation());
+        crt = playerMovement.StartCoroutine(WaitForAnimation());
 
         playerCombat.SetCanStartCombo(false);
 
@@ -56,6 +57,10 @@ public class PlayerAttack2State : PlayerBaseState<PlayerContext>
         playerMovement.moveSpeed = previousMoveSpeed;
 
         playerDamageDealer.SetAttackBox(false, AttackType.PlayerAttack);
+        if(crt != null)
+        {
+            playerMovement.StopCoroutine(crt);
+        }
     }
 
     IEnumerator WaitForAnimation()

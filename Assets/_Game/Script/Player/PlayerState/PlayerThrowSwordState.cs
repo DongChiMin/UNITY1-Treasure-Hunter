@@ -11,7 +11,8 @@ public class PlayerThrowSwordState : PlayerBaseState<PlayerContext>
     private PlayerItemPickup playerItemPickup;
     private PlayerInput input;
 
-    float previousGravityScale; 
+    float previousGravityScale;
+    private Coroutine crt;
 
     public void OnInit(PlayerContext player)
     {
@@ -27,7 +28,7 @@ public class PlayerThrowSwordState : PlayerBaseState<PlayerContext>
         playerMovement.rb.gravityScale = 0.25f;
         playerMovement.rb.velocity = Vector2.zero;
         playerMovement.ChangeAnim("Throw");
-        playerMovement.StartCoroutine(WaitForAnimation());
+        crt = playerMovement.StartCoroutine(WaitForAnimation());
     }
 
     public void OnExecute()
@@ -42,6 +43,10 @@ public class PlayerThrowSwordState : PlayerBaseState<PlayerContext>
     {
         playerMovement.rb.velocity = Vector2.zero;
         playerMovement.rb.gravityScale = previousGravityScale;
+        if(crt != null)
+        {
+            playerMovement.StopCoroutine(crt);
+        }
     }
 
     IEnumerator WaitForAnimation()

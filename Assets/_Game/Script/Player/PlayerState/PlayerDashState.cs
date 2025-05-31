@@ -9,6 +9,8 @@ public class PlayerDashState : PlayerBaseState<PlayerContext>
     float previousGravityScale;
     float dashEndTime;
 
+    private Coroutine crt;
+
     public void OnInit(PlayerContext player)
     {
         this.playerMovement = player.playerMovement;
@@ -25,7 +27,7 @@ public class PlayerDashState : PlayerBaseState<PlayerContext>
         playerMovement.rb.gravityScale = 0f;
         playerMovement.canDash = false;
         playerMovement.DashPlayer();
-        playerMovement.StartCoroutine(GhostDashEffect());
+        crt = playerMovement.StartCoroutine(GhostDashEffect());
     }
 
     public void OnExecute()
@@ -50,6 +52,7 @@ public class PlayerDashState : PlayerBaseState<PlayerContext>
     {
         playerMovement.rb.gravityScale = previousGravityScale;
         playerMovement.StartCoroutine(CanDashReset());
+        playerMovement.StopCoroutine(crt);
     }
 
     IEnumerator CanDashReset()

@@ -11,6 +11,7 @@ public class PlayerAttack3State : PlayerBaseState<PlayerContext>
     private DamageDealer playerDamageDealer;
 
     float previousMoveSpeed;
+    private Coroutine crt;
 
     public void OnInit(PlayerContext player)
     {
@@ -26,7 +27,7 @@ public class PlayerAttack3State : PlayerBaseState<PlayerContext>
         //set giá trị các components
         playerMovement.rb.velocity = Vector3.zero;
         playerMovement.ChangeAnim("Attack 3");
-        playerMovement.StartCoroutine(WaitForAnimation());
+        crt = playerMovement.StartCoroutine(WaitForAnimation());
 
         playerCombat.SetCanStartCombo(false);
 
@@ -53,6 +54,10 @@ public class PlayerAttack3State : PlayerBaseState<PlayerContext>
         playerMovement.moveSpeed = previousMoveSpeed;
 
         playerDamageDealer.SetAttackBox(false, AttackType.PlayerAttack);
+        if(crt != null)
+        {
+            playerMovement.StopCoroutine(crt);
+        }
     }
 
     IEnumerator WaitForAnimation()

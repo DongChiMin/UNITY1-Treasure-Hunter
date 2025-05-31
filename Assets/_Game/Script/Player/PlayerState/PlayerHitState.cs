@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +8,8 @@ public class PlayerHitState : PlayerBaseState<PlayerContext>
     private PlayerStateMachine playerStateMachine;
     private PlayerCombat playerCombat;
     private PlayerContext playerContext;
+
+    private Coroutine crt;
 
     public void OnInit(PlayerContext player)
     {
@@ -19,8 +21,10 @@ public class PlayerHitState : PlayerBaseState<PlayerContext>
     public void OnEnter()
     {
         playerCombat.SetImortal(true);
+        //Reset biến current Anim để Animation Hit có thể Play lại từ đầu kể cả khi đang chạy dở
+        playerMovement.ResetAnim();
         playerMovement.ChangeAnim("Hit");
-        playerContext.StartCoroutine(WaitForAnimation());
+        crt = playerContext.StartCoroutine(WaitForAnimation());
     }
 
     public void OnExecute()
@@ -35,7 +39,10 @@ public class PlayerHitState : PlayerBaseState<PlayerContext>
 
     public void OnExit()
     {
-
+        if(crt != null)
+        {
+            playerContext.StopCoroutine(crt);
+        }
     }
 
     IEnumerator WaitForAnimation()

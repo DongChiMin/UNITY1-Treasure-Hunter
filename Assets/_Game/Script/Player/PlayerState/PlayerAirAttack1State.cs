@@ -13,6 +13,7 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerContext>
 
     bool goNextCombo;
     float previousGravityScale;
+    private Coroutine crt;
 
     public void OnInit(PlayerContext player)
     {
@@ -27,7 +28,7 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerContext>
     {
         //Set giá trị các component
         playerMovement.ChangeAnim("Air Attack 1");
-        playerMovement.StartCoroutine(WaitForAnimation());
+        crt = playerMovement.StartCoroutine(WaitForAnimation());
         playerMovement.rb.velocity = Vector2.zero;
 
         playerDamageDealer.SetAttackBox(true, AttackType.PlayerAirAttack);
@@ -55,6 +56,11 @@ public class PlayerAirAttack1State : PlayerBaseState<PlayerContext>
         playerMovement.rb.gravityScale = previousGravityScale;
 
         playerDamageDealer.SetAttackBox(false, AttackType.PlayerAirAttack);
+
+        if(crt != null)
+        {
+            playerMovement.StopCoroutine(crt);
+        }
     }
 
     IEnumerator WaitForAnimation()
