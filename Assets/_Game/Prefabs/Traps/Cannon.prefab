@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f650cf8595bd4e3458f61eb0f56d57fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 15
+  maxHP: 25
   minKnockX: 1
   maxKnockX: 2
   minKnockY: 4
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc6aede8837e2724c8c19e71df41f15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 5
+  attackCooldown: 3
 --- !u!114 &8461193796992961768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,6 +245,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48d1d0d3cfd943b4abd63e73b593cc5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  detectArea: {x: 20, y: 6}
   detected: 0
 --- !u!114 &6671519242217262925
 MonoBehaviour:

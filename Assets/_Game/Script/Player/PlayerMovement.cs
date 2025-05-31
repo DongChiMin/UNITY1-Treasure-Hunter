@@ -85,13 +85,19 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        animator.Play(newAnim);
+        //Chỉ có 2 layer, nếu layerweight(1) trả về 1 tức là đang chạy ở layer 1, trả về 0 là đang chạy ở layer còn lại (0)
+        animator.Play(newAnim, (int) animator.GetLayerWeight(1), 0);
         currentAnim = newAnim;
     }
 
     public void ResetSwordAnim()
     {
         ChangeAnim(currentAnim);
+    }
+
+    public void ResetAnim()
+    {
+        currentAnim = null;
     }
 
     public float GetLookDownDistance()

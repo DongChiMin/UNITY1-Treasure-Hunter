@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class EnemyVision : MonoBehaviour
 {
+    [SerializeField] Vector2 detectArea;
     [Header("Debug")]
     [SerializeField] private bool detected;
 
     private GameObject target;
     void Update()
     {
-        Collider2D playerCol = Physics2D.OverlapBox(transform.position, new Vector2(10, 3), 0f, LayerMask.GetMask("Player"));
+        Collider2D playerCol = Physics2D.OverlapBox(transform.position, detectArea, 0f, LayerMask.GetMask("Player"));
         if(playerCol != null)
         {
             detected = true;
@@ -25,7 +26,7 @@ public class EnemyVision : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(transform.position, new Vector3(10,3,0.1f));
+        Gizmos.DrawWireCube(transform.position, detectArea);
     }
 
     public bool GetDetected()
