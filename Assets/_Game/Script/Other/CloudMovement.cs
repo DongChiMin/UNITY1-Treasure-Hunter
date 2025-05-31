@@ -11,7 +11,7 @@ public class CloudMovement : MonoBehaviour
     {
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         transform.Translate(Vector3.left * speed * Time.deltaTime);
         if(transform.position.x - target.position.x < 0.1f)

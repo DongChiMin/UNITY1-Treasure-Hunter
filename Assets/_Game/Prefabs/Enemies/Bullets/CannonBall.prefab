@@ -284,7 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackType: 5
   damageAmount: 5
-  knockbackForce: 1
+  knockbackForce: 1.5
   owner: {fileID: 3863276524222329314}
   validTags:
   - Player
