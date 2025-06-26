@@ -8,7 +8,7 @@ public class ObjectPooling : MonoBehaviour
     [SerializeField] private int poolSize;
 
     [Tooltip("The duration until gameObject return to Pool (-1: Never)")]
-    [Range(-1, 100)]
+    [Range(-1.1f, 100)]
     [SerializeField] private float timeToAddPool;
 
     private Queue<GameObject> poolQueue = new Queue<GameObject>();
@@ -53,7 +53,11 @@ public class ObjectPooling : MonoBehaviour
     IEnumerator AddToPoolDelay(GameObject obj, float time)
     {
         yield return new WaitForSeconds(time);
-        AddToPool(obj);
+        if (!poolQueue.Contains(obj) && obj.activeSelf == true)
+        {
+            AddToPool(obj);
+        }
+        
     }
 
     public void AddToPool(GameObject obj)

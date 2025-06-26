@@ -5,7 +5,7 @@ using UnityEngine.Windows;
 
 public class EnemyBullet : MonoBehaviour
 {
-    //Script này cần sử dụng ObjectPooling
+    //Script này cần sử dụng ObjectPooling và FragmentsEffect
 
     [SerializeField] private float flySpeed;
     [SerializeField] private Rigidbody2D rb;
@@ -33,6 +33,7 @@ public class EnemyBullet : MonoBehaviour
 
     private void Explosion()
     {
+        CinemachineShake.Instance.ShakeCamera(2f, 0.15f);
         animator.Play("Explosion");
         rb.velocity = Vector2.zero;
         FragmentsEffect fragmentsEffect = GetComponent<FragmentsEffect>();
